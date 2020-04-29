@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/GroupDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/PlanDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/Plan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/GroupDAO.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDAO.xml" afterDir="false" />
+    <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="更新了jdbc.properties使其能够对应mysql8数据库并进行测试">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/done/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/UserDAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" afterDir="false" />
     </list>
@@ -41,33 +32,11 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="done: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="done: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="group: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="done: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="plan: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Done" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -83,6 +52,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="XTG-L &lt;xtg-l@foxmail.com&gt;" />
         <option value="xtg" />
       </list>
     </option>
@@ -118,6 +88,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -130,6 +101,45 @@
       <expand />
       <select />
     </treeState>
+  </component>
+  <component name="RunManager" selected="JUnit.UserDAOTest">
+    <configuration name="UserDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Done" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.done.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.done.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.done.dao.UserDAOTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDAOTest.testQueryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Done" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.done.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.done.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.done.dao.UserDAOTest" />
+      <option name="METHOD_NAME" value="testQueryById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserDAOTest" />
+        <item itemvalue="JUnit.UserDAOTest.testQueryById" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -166,22 +176,37 @@
       <workItem from="1587953474591" duration="3914000" />
       <workItem from="1587961431953" duration="13982000" />
       <workItem from="1588057326026" duration="3270000" />
-      <workItem from="1588069340312" duration="2369000" />
+      <workItem from="1588069340312" duration="3116000" />
+      <workItem from="1588088252745" duration="105000" />
+      <workItem from="1588129563857" duration="2341000" />
     </task>
+    <task id="LOCAL-00001" summary="init part of DAO,entity,mapper">
+      <created>1588071941785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588071941785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init part of DAO,entity,mapper" />
+    <MESSAGE value="更新了jdbc.properties使其能够对应mysql8数据库并进行测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了jdbc.properties使其能够对应mysql8数据库并进行测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="19" key="#SQL_Dialects" timestamp="1588071331761">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="19" key="#SQL_Dialects/0.0.1280.720@0.0.1280.720" timestamp="1588071331761" />
-    <state x="96" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588071136522">
+    <state x="96" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588131361221">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="96" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1588071136522" />
+    <state x="96" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1588131361221" />
     <state x="446" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1588071682192">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -190,47 +215,59 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587956374165" />
-    <state x="186" y="0" key="CommitChangelistDialog2" timestamp="1588071810056">
+    <state x="268" y="0" key="CommitChangelistDialog2" timestamp="1588131630843">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="186" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1588071810056" />
+    <state x="268" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1588131630843" />
     <state x="237" y="121" key="EnvironmentVariablesDialog" timestamp="1588070986492">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="237" y="121" key="EnvironmentVariablesDialog/0.0.1280.720@0.0.1280.720" timestamp="1588070986492" />
-    <state width="847" height="177" key="GridCell.Tab.0.bottom" timestamp="1588071224563">
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1588131891213">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="847" height="177" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588071224563" />
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1588131891213" />
+    <state x="90" y="34" width="1148" height="683" key="GrepConsoleSettings" timestamp="1588130259153">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="90" y="34" width="1148" height="683" key="GrepConsoleSettings/0.0.1280.720@0.0.1280.720" timestamp="1588130259153" />
+    <state x="526" y="304" key="GrepConsoleSound" timestamp="1588130204396">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="526" y="304" key="GrepConsoleSound/0.0.1280.720@0.0.1280.720" timestamp="1588130204396" />
+    <state width="1239" height="176" key="GridCell.Tab.0.bottom" timestamp="1588131726086">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1239" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588131726086" />
     <state width="1493" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="847" height="177" key="GridCell.Tab.0.center" timestamp="1588071224563">
+    <state width="1239" height="176" key="GridCell.Tab.0.center" timestamp="1588131726086">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="847" height="177" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588071224563" />
+    <state width="1239" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588131726086" />
     <state width="1493" height="187" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="847" height="177" key="GridCell.Tab.0.left" timestamp="1588071224561">
+    <state width="1239" height="176" key="GridCell.Tab.0.left" timestamp="1588131726086">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="847" height="177" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588071224561" />
+    <state width="1239" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588131726086" />
     <state width="1493" height="187" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="847" height="177" key="GridCell.Tab.0.right" timestamp="1588071224563">
+    <state width="1239" height="176" key="GridCell.Tab.0.right" timestamp="1588131726086">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="847" height="177" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588071224563" />
+    <state width="1239" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588131726086" />
     <state width="1493" height="187" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
     <state width="286" height="454" key="HiddenNamespacesPopup" timestamp="1588071256882">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="286" height="454" key="HiddenNamespacesPopup/0.0.1280.720@0.0.1280.720" timestamp="1588071256882" />
-    <state x="208" y="0" key="SettingsEditor" timestamp="1587972618820">
+    <state x="208" y="0" key="SettingsEditor" timestamp="1588130893860">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="208" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1587972618820" />
+    <state x="208" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1588130893860" />
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587954771616" />
-    <state x="286" y="184" key="com.intellij.ide.util.TipDialog" timestamp="1588069336315">
+    <state x="286" y="184" key="com.intellij.ide.util.TipDialog" timestamp="1588129560946">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="286" y="184" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1588069336315" />
+    <state x="286" y="184" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1588129560946" />
     <state x="400" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587972667111">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
