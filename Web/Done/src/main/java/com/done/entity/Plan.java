@@ -1,5 +1,8 @@
 package com.done.entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Plan {
     private String planID;
     private String planName;
