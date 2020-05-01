@@ -152,6 +152,13 @@
         <artifactId>commons-collections</artifactId>
         <version>3.2</version>
       </dependency>
+
+      <!-- FastJson -->
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.61</version>
+      </dependency>
     </dependencies>
     <build>
       <finalName>ssm</finalName>

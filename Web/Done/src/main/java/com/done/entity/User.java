@@ -1,13 +1,18 @@
 package com.done.entity;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import org.springframework.stereotype.Component;
 
 @Component
 public class User {
 
+     @JSONField(name = "userID")
      private String userID;
+     @JSONField(name = "userName")
      private String userName;
+     @JSONField(name = "pwd")
      private String pwd;
+     @JSONField(name = "role")
      private String role;
 
      public String getUserID() {

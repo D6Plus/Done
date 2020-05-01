@@ -1,11 +1,16 @@
 package com.done.entity;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Group {
+
+    @JSONField(name = "groupID")
     private String groupID;
+    @JSONField(name = "groupName")
     private String groupName;
+    @JSONField(name = "groupDescribe")
     private String groupDescribe;
 
     public String getGroupID() {

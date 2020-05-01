@@ -1,11 +1,16 @@
 package com.done.entity;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Plan {
+
+    @JSONField(name = "planID")
     private String planID;
+    @JSONField(name = "planName")
     private String planName;
+    @JSONField(name = "planDescribe")
     private String planDescribe;
 
     public String getPlanID() {
