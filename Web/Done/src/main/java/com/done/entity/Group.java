@@ -43,6 +43,6 @@ public class Group {
                 "groupID='" + groupID + '\'' +
                 ", groupName='" + groupName + '\'' +
                 ", groupDescribe='" + groupDescribe + '\'' +
-                '}';
+                "}\n";
     }
 }

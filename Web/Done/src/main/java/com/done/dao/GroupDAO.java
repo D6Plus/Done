@@ -9,5 +9,9 @@ import java.util.List;
 @Repository
 public interface GroupDAO {
     Group queryByID(@Param("groupID") String groupID);
+    List<Group> queryByName(@Param("groupName") String groupName);
     List<Group> queryAll();
+    String getLastID();
+
+    void insertGroup(@Param("groupID") String groupID, @Param("groupName") String groupName, @Param("groupDescribe") String groupDescribe);
 }

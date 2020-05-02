@@ -7,8 +7,58 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="增加了jackson-core jackson-annotations依赖，修改了jackson-databind的版本">
+    <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/done/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/GroupDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/GroupDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/PlanDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/PlanDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/entity/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/Plan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GroupDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GroupDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/config/test.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/static/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/e2e/custom-assertions/elementCount.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/e2e/nightwatch.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/e2e/runner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/e2e/specs/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/unit/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/unit/jest.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/unit/setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/unit/specs/HelloWorld.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +112,7 @@
         <option value="spring-beans.schema" />
         <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -92,6 +143,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1b6XMYaX6aj9gNgjsxa9MNjb6DD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -100,17 +154,19 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Vue/vue.js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -131,58 +187,52 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="Tomcat Server.DoneServer">
-    <configuration name="DAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Done" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DAOTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JsonTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ServiceImplTest.createNewUserTest">
+    <configuration name="ServiceImplTest.createNewGroupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Done" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JsonTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="ServiceImplTest" />
+      <option name="METHOD_NAME" value="createNewGroupTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceImplTest.createNewPlan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Done" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="createNewPlan" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceImplTest.userServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceImplTest.createNewUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Done" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ServiceImplTest" />
-      <option name="METHOD_NAME" value="userServiceTest" />
+      <option name="METHOD_NAME" value="createNewUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceImplTest.getNewPlanID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Done" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ServiceImplTest" />
+      <option name="METHOD_NAME" value="getNewPlanID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceImplTest.queryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Done" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ServiceImplTest" />
+      <option name="METHOD_NAME" value="queryServiceTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -263,18 +313,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DAOTest" />
-      <item itemvalue="JUnit.JsonTest.test" />
-      <item itemvalue="JUnit.ServiceImplTest" />
-      <item itemvalue="JUnit.ServiceImplTest.userServiceTest" />
+      <item itemvalue="JUnit.ServiceImplTest.queryServiceTest" />
       <item itemvalue="Tomcat Server.DoneServer" />
+      <item itemvalue="JUnit.ServiceImplTest.createNewPlan" />
+      <item itemvalue="JUnit.ServiceImplTest.getNewPlanID" />
+      <item itemvalue="JUnit.ServiceImplTest.createNewGroupTest" />
+      <item itemvalue="JUnit.ServiceImplTest.createNewUserTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JsonTest.test" />
-        <item itemvalue="JUnit.ServiceImplTest" />
-        <item itemvalue="JUnit.ServiceImplTest.userServiceTest" />
-        <item itemvalue="JUnit.DAOTest" />
+        <item itemvalue="JUnit.ServiceImplTest.createNewUserTest" />
+        <item itemvalue="JUnit.ServiceImplTest.createNewGroupTest" />
+        <item itemvalue="JUnit.ServiceImplTest.createNewPlan" />
+        <item itemvalue="JUnit.ServiceImplTest.getNewPlanID" />
+        <item itemvalue="JUnit.ServiceImplTest.queryServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +374,11 @@
       <workItem from="1588238757087" duration="592000" />
       <workItem from="1588298063953" duration="3459000" />
       <workItem from="1588303559212" duration="2409000" />
-      <workItem from="1588316201845" duration="555000" />
+      <workItem from="1588316201845" duration="794000" />
+      <workItem from="1588337468905" duration="1755000" />
+      <workItem from="1588346497165" duration="614000" />
+      <workItem from="1588381282821" duration="8588000" />
+      <workItem from="1588401102819" duration="4620000" />
     </task>
     <task id="LOCAL-00001" summary="init part of DAO,entity,mapper">
       <created>1588071941785</created>
@@ -359,19 +415,28 @@
       <option name="project" value="LOCAL" />
       <updated>1588308329464</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="加了vue.js，不知道对不对">
+      <created>1588318209349</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588318209349</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init part of DAO,entity,mapper" />
     <MESSAGE value="更新了jdbc.properties使其能够对应mysql8数据库并进行测试" />
     <MESSAGE value="写了一点service层的东西并进行测试" />
     <MESSAGE value="加上了FastJson并且进行了小小的测试" />
     <MESSAGE value="增加了jackson-core jackson-annotations依赖，修改了jackson-databind的版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了jackson-core jackson-annotations依赖，修改了jackson-databind的版本" />
+    <MESSAGE value="加了vue.js，不知道对不对" />
+    <option name="LAST_COMMIT_MESSAGE" value="加了vue.js，不知道对不对" />
   </component>
   <component name="WindowStateProjectService">
     <state x="420" y="165" key="#BuildArtifactsBeforeRunChooser" timestamp="1588308887941">
@@ -386,25 +451,33 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="19" key="#SQL_Dialects/0.0.1280.720@0.0.1280.720" timestamp="1588071331761" />
-    <state x="96" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588308909542">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="371" y="100" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1588383816956">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="371" y="100" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.689@0.0.1280.689" timestamp="1588383816956" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588401762961">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1588401762961" />
     <state x="96" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1588308909542" />
-    <state x="446" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1588229689416">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1588405694678">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1588405694678" />
     <state x="446" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1588229689416" />
     <state x="384" y="223" width="512" height="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588233310649">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="384" y="223" width="512" height="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.720@0.0.1280.720" timestamp="1588233310649" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587956374165">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="416" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588402661682">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="416" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1588402661682" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587956374165" />
-    <state x="268" y="0" key="CommitChangelistDialog2" timestamp="1588308335954">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="268" y="0" key="CommitChangelistDialog2" timestamp="1588406162429">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="268" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1588406162429" />
     <state x="268" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1588308335954" />
     <state x="202" y="54" key="DiffContextDialog" timestamp="1588308263305">
       <screen x="0" y="0" width="1280" height="720" />
@@ -414,9 +487,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="237" y="121" key="EnvironmentVariablesDialog/0.0.1280.720@0.0.1280.720" timestamp="1588070986492" />
-    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1588131891213">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1588382205589">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1588382205589" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1588131891213" />
     <state x="90" y="34" width="1148" height="683" key="GrepConsoleSettings" timestamp="1588303115463">
       <screen x="0" y="0" width="1280" height="720" />
@@ -426,57 +500,69 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="526" y="304" key="GrepConsoleSound/0.0.1280.720@0.0.1280.720" timestamp="1588130204396" />
-    <state width="846" height="176" key="GridCell.Tab.0.bottom" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1240" height="165" key="GridCell.Tab.0.bottom" timestamp="1588406152678">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="1240" height="165" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1588406152678" />
     <state width="846" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="846" height="176" key="GridCell.Tab.0.center" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1240" height="165" key="GridCell.Tab.0.center" timestamp="1588406152678">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="1240" height="165" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1588406152678" />
     <state width="846" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="846" height="176" key="GridCell.Tab.0.left" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1240" height="165" key="GridCell.Tab.0.left" timestamp="1588406152670">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="1240" height="165" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1588406152670" />
     <state width="846" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="846" height="176" key="GridCell.Tab.0.right" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1240" height="165" key="GridCell.Tab.0.right" timestamp="1588406152678">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="1240" height="165" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1588406152678" />
     <state width="846" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="846" height="176" key="GridCell.Tab.1.bottom" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="847" height="165" key="GridCell.Tab.1.bottom" timestamp="1588394670254">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="847" height="165" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1588394670254" />
     <state width="846" height="176" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
-    <state width="846" height="176" key="GridCell.Tab.1.center" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="847" height="165" key="GridCell.Tab.1.center" timestamp="1588394670254">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="847" height="165" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1588394670254" />
     <state width="846" height="176" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
-    <state width="846" height="176" key="GridCell.Tab.1.left" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="847" height="165" key="GridCell.Tab.1.left" timestamp="1588394670254">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="847" height="165" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1588394670254" />
     <state width="846" height="176" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
-    <state width="846" height="176" key="GridCell.Tab.1.right" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="847" height="165" key="GridCell.Tab.1.right" timestamp="1588394670254">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="847" height="165" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1588394670254" />
     <state width="846" height="176" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
-    <state width="846" height="176" key="GridCell.Tab.2.bottom" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="847" height="165" key="GridCell.Tab.2.bottom" timestamp="1588394670254">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="847" height="165" key="GridCell.Tab.2.bottom/0.0.1280.689@0.0.1280.689" timestamp="1588394670254" />
     <state width="846" height="176" key="GridCell.Tab.2.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
-    <state width="846" height="176" key="GridCell.Tab.2.center" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="847" height="165" key="GridCell.Tab.2.center" timestamp="1588394670254">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="847" height="165" key="GridCell.Tab.2.center/0.0.1280.689@0.0.1280.689" timestamp="1588394670254" />
     <state width="846" height="176" key="GridCell.Tab.2.center/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
-    <state width="846" height="176" key="GridCell.Tab.2.left" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="847" height="165" key="GridCell.Tab.2.left" timestamp="1588394670254">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="847" height="165" key="GridCell.Tab.2.left/0.0.1280.689@0.0.1280.689" timestamp="1588394670254" />
     <state width="846" height="176" key="GridCell.Tab.2.left/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
-    <state width="846" height="176" key="GridCell.Tab.2.right" timestamp="1588308965142">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="847" height="165" key="GridCell.Tab.2.right" timestamp="1588394670254">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state width="847" height="165" key="GridCell.Tab.2.right/0.0.1280.689@0.0.1280.689" timestamp="1588394670254" />
     <state width="846" height="176" key="GridCell.Tab.2.right/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="286" height="454" key="HiddenNamespacesPopup" timestamp="1588071256882">
       <screen x="0" y="0" width="1280" height="720" />
@@ -499,15 +585,19 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="482" y="132" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1280.720@0.0.1280.720" timestamp="1588228756515" />
-    <state x="286" y="176" key="com.intellij.ide.util.TipDialog" timestamp="1588317965464">
+    <state x="286" y="176" key="com.intellij.ide.util.TipDialog" timestamp="1588401101686">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="286" y="176" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1588317965464" />
+    <state x="286" y="176" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1588401101686" />
     <state x="286" y="184" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1588303558334" />
     <state x="400" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588228207994">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="400" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1588228207994" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1588383206156">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1588383206156" />
     <state x="449" y="95" key="spring file set editor" timestamp="1587954473265">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

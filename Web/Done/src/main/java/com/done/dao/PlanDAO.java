@@ -9,5 +9,8 @@ import java.util.List;
 @Repository
 public interface PlanDAO {
     Plan queryByID(@Param("planID") String planID);
+    List<Plan> queryByName(@Param("planName") String planName);
     List<Plan> queryAll();
+    String getLastID();
+    void insertPlan(@Param("planID") String planID, @Param("planName") String planName, @Param("planDescribe") String planDescribe);
 }

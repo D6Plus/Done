@@ -43,6 +43,6 @@ public class Plan {
                 "planID='" + planID + '\'' +
                 ", planName='" + planName + '\'' +
                 ", planDescribe='" + planDescribe + '\'' +
-                '}';
+                "}\n";
     }
 }

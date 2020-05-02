@@ -8,8 +8,20 @@ public class ServiceImplTest extends BaseTest {
     private UserServiceImpl userService;
 
     @Test
-    public void userServiceTest() {
-        System.out.println(userService.getById("u1"));
-        System.out.println(userService.getList());
+    public void createNewUserTest() {
+        userService.createNewUser("created user", "pwd");
+        System.out.println(userService.getUserList());
+    }
+
+    @Test
+    public void createNewPlanTest() {
+        userService.createNewPlan("created plan", "this is for test");
+        System.out.println(userService.getPlanList());
+    }
+
+    @Test
+    public void createNewGroupTest() {
+        userService.createNewGroup("created group", "this is for test");
+        System.out.println(userService.getGroupList());
     }
 }
