@@ -7,59 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/done/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/GroupDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/GroupDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/PlanDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/PlanDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/entity/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/Plan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GroupDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GroupDAO.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDAO.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/config/test.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/static/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/e2e/custom-assertions/elementCount.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/e2e/nightwatch.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/e2e/runner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/e2e/specs/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/unit/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/unit/jest.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/unit/setup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/frontend/test/unit/specs/HelloWorld.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -378,7 +326,7 @@
       <workItem from="1588337468905" duration="1755000" />
       <workItem from="1588346497165" duration="614000" />
       <workItem from="1588381282821" duration="8588000" />
-      <workItem from="1588401102819" duration="4620000" />
+      <workItem from="1588401102819" duration="4885000" />
     </task>
     <task id="LOCAL-00001" summary="init part of DAO,entity,mapper">
       <created>1588071941785</created>
@@ -422,7 +370,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588318209349</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="在userService中添加新增用户、新增小组、新增计划方法">
+      <created>1588406263836</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588406263836</updated>
+    </task>
+    <task id="LOCAL-00008" summary="在userService中添加新增用户、新增小组、新增计划方法">
+      <created>1588406311109</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588406311109</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +398,8 @@
     <MESSAGE value="加上了FastJson并且进行了小小的测试" />
     <MESSAGE value="增加了jackson-core jackson-annotations依赖，修改了jackson-databind的版本" />
     <MESSAGE value="加了vue.js，不知道对不对" />
-    <option name="LAST_COMMIT_MESSAGE" value="加了vue.js，不知道对不对" />
+    <MESSAGE value="在userService中添加新增用户、新增小组、新增计划方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="在userService中添加新增用户、新增小组、新增计划方法" />
   </component>
   <component name="WindowStateProjectService">
     <state x="420" y="165" key="#BuildArtifactsBeforeRunChooser" timestamp="1588308887941">
