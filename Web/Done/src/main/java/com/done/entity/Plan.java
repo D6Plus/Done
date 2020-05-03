@@ -10,8 +10,8 @@ public class Plan {
     private String planID;
     @JSONField(name = "planName")
     private String planName;
-    @JSONField(name = "planDescribe")
-    private String planDescribe;
+    @JSONField(name = "planContent")
+    private String planContent;
 
     public String getPlanID() {
         return planID;
@@ -21,8 +21,8 @@ public class Plan {
         return planName;
     }
 
-    public String getPlanDescribe() {
-        return planDescribe;
+    public String getplanContent() {
+        return planContent;
     }
 
     public void setPlanID(String planID) {
@@ -33,8 +33,8 @@ public class Plan {
         this.planName = planName;
     }
 
-    public void setPlanDescribe(String planDescribe) {
-        this.planDescribe = planDescribe;
+    public void setplanContent(String planContent) {
+        this.planContent = planContent;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class Plan {
         return "Plan{" +
                 "planID='" + planID + '\'' +
                 ", planName='" + planName + '\'' +
-                ", planDescribe='" + planDescribe + '\'' +
+                ", planDescribe='" + planContent + '\'' +
                 "}\n";
     }
 }

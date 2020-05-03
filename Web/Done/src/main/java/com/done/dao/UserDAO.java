@@ -13,4 +13,4 @@ public interface UserDAO {
     List<User> queryAll();
     String getLastID();
     void insertUser(@Param("userID") String userID, @Param("userName") String userName, @Param("pwd") String pwd, @Param("role") String role);
-}。
+}

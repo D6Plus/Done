@@ -20,7 +20,7 @@ public class DAOTest extends BaseTest {
 
     @Test
     public void testUserQueryById() {
-        String userID = "u1";
+        String userID = "u0";
         User user = userDAO.queryByID(userID);
         System.out.println(user);
     }
