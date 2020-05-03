@@ -29,9 +29,15 @@
         INSERT INTO  `userrole`(userID,groupID,role) VALUES(#{User.userID},#{Group.groupID},0)
     </insert>
 
-    <!--加入小组  0是群主  1是管理员  2是成员-->
+    <!--加入小组      0是群主  1是管理员  2是成员-->
     <insert id="joinGroup">
         INSERT INTO  `userrole`(userID,groupID,role) VALUES (#{User.userID},#{Group.groupID},2)
     </insert>
+
+    <!--退出小组-->
+    <delete id="quitGroup" >
+        delete from `userrole` where userID=#{User.userID} and groupID=#{Group.groupID}
+    </delete>
+
 
 </mapper>

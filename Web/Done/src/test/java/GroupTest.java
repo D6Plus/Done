@@ -26,4 +26,32 @@ public class GroupTest {
         groupDAO.insertGroup(group);
         groupDAO.insertUserrole(group,user);
     }
+
+
+    //加入小组
+    @Test
+    public void testJoinGroup(){
+        User user=new User();
+        Group group=new Group();
+        user.setUserID("xiangge789");
+        user.setPwd("951753");
+        group.setGroupDescribe("我们是冠军");
+        group.setGroupName("RNG");
+        group.setGroupID(22);
+        System.out.println(group);
+        groupDAO.joinGroup(user,group);
+    }
+
+    //退出小组
+    @Test
+    public void testquitGroup(){
+        User user =new User();
+        Group group=new Group();
+        user.setUserID("HGNB");
+        user.setPwd("123132");
+        group.setGroupID(5);
+        group.setGroupName("nimasile");
+        groupDAO.quitGroup(user,group);
+
+    }
 }

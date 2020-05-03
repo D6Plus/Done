@@ -12,4 +12,7 @@ public interface GroupService {
 
     //加入小组
     void joinGroup(Group group,User user);
+
+    //退出小组
+    void quitGroup(User user,Group group);
 }

@@ -31,7 +31,17 @@ public class GroupServicelmpl implements GroupService {
      */
     @Override
     public void joinGroup(Group group, User user) {
-        groupDAO.JoinGroup(user,group);
+        groupDAO.joinGroup(user,group);
+    }
+
+    /**
+     * 退出小组功能
+     * @param user
+     * @param group
+     */
+    @Override
+    public void quitGroup(User user, Group group) {
+        groupDAO.quitGroup(user,group);
     }
 
 }

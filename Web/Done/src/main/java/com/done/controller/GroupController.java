@@ -21,6 +21,10 @@ public class GroupController {
     @Autowired
     private GroupService groupService;//注入  放入ioc管理
 
+    /**
+     * 创建小组控制器
+     * @param map
+     */
     @RequestMapping(value = "insertGroup",produces = "application/json;charset=utf-8")
     @ResponseBody
     public void insertGroup(@RequestBody Map<String,Object> map){
@@ -31,7 +35,12 @@ public class GroupController {
         groupService.insertGroup(group);
     }
 
+    /**
+     * 加入小组控制器
+     * @param map
+     */
     @RequestMapping(value="joinGroup",produces = "application/json;charset=utf-8")
+    @ResponseBody
     public void joinGroup(@RequestBody Map<String,Object> map){
         Group group=(Group)map.get("Group");
         User user=(User)map.get("User");
@@ -39,5 +48,19 @@ public class GroupController {
         System.out.println("接受来自前台JSON的转化对象"+user);
         groupService.joinGroup(group,user);
 
+    }
+
+    /**
+     * 退出小组控制器
+     * @param map
+     */
+    @RequestMapping(value = "quitGroup",produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public void quitGroup(@RequestBody Map<String,Object> map){
+        Group group=(Group)map.get("Group");
+        User user=(User)map.get("User");
+        System.out.println("接受来自前台JSON对象转化为对象"+group);
+        System.out.println("接受来自前台JSON的转化对象"+user);
+        groupService.quitGroup(user,group);
     }
 }
