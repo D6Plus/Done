@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f479157c-09bd-4b5f-ad7c-fa559fbc02c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Web/Done/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Done/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/main/resources/jdbc.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bO7G1EyoauOaKJ9ME5zzGo0n2a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Web/Done" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProject\Done\Web\Done\.idea" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1588491187798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588491187798</updated>
+      <workItem from="1588491192667" duration="1219000" />
+      <workItem from="1588492490405" duration="439000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="218" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1588491643772">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="580" y="218" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588491643772" />
+    <state x="552" y="199" key="#项目结构" timestamp="1588492555055">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="199" key="#项目结构/0.0.1920.1080@0.0.1920.1080" timestamp="1588492555055" />
+    <state x="632" y="173" key="FileChooserDialogImpl" timestamp="1588491323600">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1587961428319" />
+    <state x="632" y="173" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1588491323600" />
+    <state x="440" y="115" key="SettingsEditor" timestamp="1588492569763">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="115" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1588492569763" />
+    <state x="658" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1588492490351">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="658" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588492490351" />
+    <state x="335" y="150" key="new project wizard" timestamp="1588491324345">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="335" y="150" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1588491324345" />
+  </component>
+</project>
