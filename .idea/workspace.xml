@@ -27,9 +27,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Web/Done" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+<<<<<<< Updated upstream
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+=======
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+>>>>>>> Stashed changes
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -54,6 +60,7 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< Updated upstream
     <state x="580" y="218" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1588491643772">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -79,5 +86,16 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="335" y="150" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1588491324345" />
+=======
+    <state x="632" y="173" key="FileChooserDialogImpl" timestamp="1588493429080">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1587961428319" />
+    <state x="632" y="173" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1588493429080" />
+    <state x="440" y="115" key="SettingsEditor" timestamp="1588493420726">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="115" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1588493420726" />
+>>>>>>> Stashed changes
   </component>
 </project>
