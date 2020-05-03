@@ -13,6 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1bO7G1EyoauOaKJ9ME5zzGo0n2a" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,6 +37,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
 >>>>>>> Stashed changes
+=======
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Web/Done" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+>>>>>>> branch-xtg
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -46,6 +53,7 @@
     <configuration />
   </component>
   <component name="TaskManager">
+<<<<<<< HEAD
     <task active="true" id="Default" summary="Default task">
       <created>1588491187798</created>
       <option name="number" value="Default" />
@@ -97,5 +105,14 @@
     </state>
     <state x="440" y="115" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1588493420726" />
 >>>>>>> Stashed changes
+=======
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1587961428319">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1587961428319" />
+>>>>>>> branch-xtg
   </component>
 </project>
