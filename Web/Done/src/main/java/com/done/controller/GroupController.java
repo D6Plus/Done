@@ -1,6 +1,7 @@
 package com.done.controller;
 
 import com.done.entity.Group;
+import com.done.entity.User;
 import com.done.service.impl.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,8 +23,21 @@ public class GroupController {
 
     @RequestMapping(value = "insertGroup",produces = "application/json;charset=utf-8")
     @ResponseBody
-    public void insertGroup(@RequestBody Group group){
+    public void insertGroup(@RequestBody Map<String,Object> map){
+        Group group=(Group)map.get("Group");
+        User user=(User)map.get("User");
         System.out.println("接受到来自前台的json对象转换为类对象"+group);
+        System.out.println("接受到来自前台的json对象转换为类对象"+user);
         groupService.insertGroup(group);
+    }
+
+    @RequestMapping(value="joinGroup",produces = "application/json;charset=utf-8")
+    public void joinGroup(@RequestBody Map<String,Object> map){
+        Group group=(Group)map.get("Group");
+        User user=(User)map.get("User");
+        System.out.println("接受来自前台JSON对象转化为对象"+group);
+        System.out.println("接受来自前台JSON的转化对象"+user);
+        groupService.joinGroup(group,user);
+
     }
 }

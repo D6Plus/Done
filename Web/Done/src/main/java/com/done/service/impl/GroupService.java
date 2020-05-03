@@ -8,4 +8,8 @@ import java.util.Map;
 public interface GroupService {
     //创建小组
     void insertGroup(Group group);
+    void insertUserrole(Group group,User user);
+
+    //加入小组
+    void joinGroup(Group group,User user);
 }

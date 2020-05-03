@@ -15,8 +15,23 @@ public class GroupServicelmpl implements GroupService {
      * 创建小组功能
      * @param group
      */
-    @Override
     public void insertGroup(Group group) {
          groupDAO.insertGroup(group);
     }
+
+    @Override
+    public void insertUserrole(Group group, User user) {
+        groupDAO.insertUserrole(group,user);
+    }
+
+    /**
+     * 加入小组功能
+     * @param group
+     * @param user
+     */
+    @Override
+    public void joinGroup(Group group, User user) {
+        groupDAO.JoinGroup(user,group);
+    }
+
 }

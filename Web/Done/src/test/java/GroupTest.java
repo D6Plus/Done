@@ -1,5 +1,6 @@
 import com.done.dao.GroupDAO;
 import com.done.entity.Group;
+import com.done.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +13,17 @@ public class GroupTest {
     @Autowired
     GroupDAO groupDAO;
 
+
+    //小组创建
     @Test
     public void testInsertGroup(){
         Group group=new Group();
-        group.setGroupDescribe("草泥马啊");
-        group.setGroupName("你妈好像死了啊？");
+        group.setGroupDescribe("草泥马2号");
+        group.setGroupName("草泥马草泥马");
+        User user=new User();
+        user.setUserID("ZENGgg");
+        user.setPwd("xianggeniub123456");
         groupDAO.insertGroup(group);
+        groupDAO.insertUserrole(group,user);
     }
 }

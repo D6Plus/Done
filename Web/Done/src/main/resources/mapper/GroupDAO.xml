@@ -22,6 +22,16 @@
 
     <!-- 创建小组 -->
     <insert id="insertGroup" parameterType="com.done.entity.Group" useGeneratedKeys="true" keyProperty="groupID" >
-        INSERT INTO group VALUES(#{groupName},#{groupDescribe})
+        INSERT INTO `group`(groupName,groupDescribe) VALUES(#{groupName},#{groupDescribe})
     </insert>
+    <!--新增userrole  0是群主  1是管理员  2是成员-->
+    <insert id="insertUserrole" >
+        INSERT INTO  `userrole`(userID,groupID,role) VALUES(#{User.userID},#{Group.groupID},0)
+    </insert>
+
+    <!--加入小组  0是群主  1是管理员  2是成员-->
+    <insert id="joinGroup">
+        INSERT INTO  `userrole`(userID,groupID,role) VALUES (#{User.userID},#{Group.groupID},2)
+    </insert>
+
 </mapper>
