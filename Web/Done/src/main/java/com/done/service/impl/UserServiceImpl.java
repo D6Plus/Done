@@ -87,8 +87,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void createNewGroup(String groupName, String groupDescribe) {
-        String newGroupID = "g" + (Integer.parseInt(groupDAO.getLastID().substring(1)) + 1);
-        groupDAO.insertGroup(newGroupID, groupName, groupDescribe);
+    public void createNewGroup(String planName, String planDescribe) {
+
     }
+
+
 }

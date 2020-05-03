@@ -1,10 +1,12 @@
 package com.done.dao;
 
 import com.done.entity.Group;
+import com.done.entity.User;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public interface GroupDAO {
@@ -13,5 +15,7 @@ public interface GroupDAO {
     List<Group> queryAll();
     String getLastID();
 
-    void insertGroup(@Param("groupID") String groupID, @Param("groupName") String groupName, @Param("groupDescribe") String groupDescribe);
+    //创建小组
+    void insertGroup(Group group);
+
 }
