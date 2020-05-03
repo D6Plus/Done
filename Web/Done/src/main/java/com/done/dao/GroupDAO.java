@@ -12,5 +12,6 @@ public interface GroupDAO {
     List<Group> queryByName(@Param("groupName") String groupName);
     List<Group> queryAll();
     String getLastID();
+
     void insertGroup(@Param("groupID") String groupID, @Param("groupName") String groupName, @Param("groupDescribe") String groupDescribe);
 }
