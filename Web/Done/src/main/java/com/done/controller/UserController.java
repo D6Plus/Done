@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -23,8 +24,13 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping(value = "index")
-    private String createNewPlan(Model model, @RequestParam("planName") String planName, @RequestParam("planDescribe") String planDescribe) {
-        userService.createNewPlan(planName, planDescribe);
+    private String createNewPlan(Model model, @RequestParam("planID") String planID,
+                                 @RequestParam("planName") String planName,
+                                 @RequestParam("planHeading") String planHeading,
+                                 @RequestParam("planRelease") Date planRelease,
+                                 @RequestParam("planDeadline") Date planDeadline,
+                                 @RequestParam("planDescribe") String planDescribe) {
+        userService.createNewPlan(planName, planHeading, planRelease, planDeadline, planDescribe);
         return "index";
     }
 }

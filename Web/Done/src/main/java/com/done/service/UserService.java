@@ -4,6 +4,7 @@ import com.done.entity.Group;
 import com.done.entity.Plan;
 import com.done.entity.User;
 
+import java.util.Date;
 import java.util.List;
 
 public interface UserService {
@@ -21,6 +22,7 @@ public interface UserService {
     List<Group> getGroupByName(String groupName);
 
     void createNewUser(String userName, String pwd);
-    void createNewPlan(String planName, String planDescribe);
+    void createNewPlan(String planName, String planHeading, Date planRelease,
+                       Date planDeadline, String planDescribe);
     void createNewGroup(String planName, String planDescribe);
 }

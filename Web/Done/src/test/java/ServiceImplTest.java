@@ -1,6 +1,10 @@
+import com.done.entity.Plan;
 import com.done.service.impl.UserServiceImpl;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.Date;
+import java.util.List;
 
 public class ServiceImplTest extends BaseTest {
 
@@ -15,8 +19,13 @@ public class ServiceImplTest extends BaseTest {
 
     @Test
     public void createNewPlanTest() {
-        userService.createNewPlan("created plan", "this is for test");
-        System.out.println(userService.getPlanList());
+        userService.createNewPlan("created plan",
+                "heading",
+                new Date(),
+                new Date(),
+                "this is for test");
+        List<Plan> pp=userService.getPlanList();
+        System.out.println(pp);
     }
 
     @Test

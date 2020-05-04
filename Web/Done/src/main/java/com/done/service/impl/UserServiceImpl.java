@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 
@@ -81,9 +82,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void createNewPlan(String planName, String planDescribe) {
+    public void createNewPlan(String planName, String planHeading, Date planRelease,
+                              Date planDeadline, String planDescribe) {
         String newPlanID = "p" + (Integer.parseInt(planDAO.getLastID().substring(1)) + 1);
-        planDAO.insertPlan(newPlanID, planName, planDescribe);
+        planDAO.insertPlan(newPlanID, planName, planHeading,
+                planRelease, planDeadline, planDescribe);
     }
 
     @Override
