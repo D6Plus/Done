@@ -22,8 +22,15 @@ public interface UserService {
     List<Group> getGroupByName(String groupName);
 
     void createNewUser(String userName, String pwd);
+    void createNewGroup(String planName, String planDescribe);
+
+
+    /*
+    ** Plan
+    */
     void createNewPlan(String planName, String planHeading, Date planRelease,
                        Date planDeadline, String planDescribe);
-    void createNewGroup(String planName, String planDescribe);
     void deletePlanByID(String planID);
+    void updatePlan(String planID, String planName, String planHeading,
+                    Date planRelease, Date planDeadline, String planDescribe);
 }

@@ -38,4 +38,11 @@ public class ServiceImplTest extends BaseTest {
         userService.deletePlanByID("p127");
         System.out.println(userService.getPlanList());
     }
+
+    @Test
+    public void updatePlanTest(){
+        userService.updatePlan("p125","hhhhh","xxx",
+                new Date(), new Date(), "change");
+        System.out.println(userService.getPlanList());
+    }
 }

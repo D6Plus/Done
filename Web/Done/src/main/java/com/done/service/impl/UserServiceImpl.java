@@ -99,4 +99,12 @@ public class UserServiceImpl implements UserService {
     public void deletePlanByID(String planID) {
         planDAO.deletePlanByID(planID);
     }
+
+    @Override
+    public void updatePlan(String planID, String planName,
+                           String planHeading, Date planRelease,
+                           Date planDeadline, String planDescribe) {
+        planDAO.updatePlan(planID, planName, planHeading,
+                planRelease, planDeadline, planDescribe);
+    }
 }
