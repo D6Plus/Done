@@ -136,7 +136,7 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="JUnit.GroupTest">
+  <component name="RunManager" selected="Tomcat Server.DoneServer">
     <configuration name="GroupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Done" />
       <option name="PACKAGE_NAME" value="" />
@@ -233,10 +233,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Done:war" />
-          <artifact name="Done:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <configuration name="frontend" type="js.build_tools.npm">
