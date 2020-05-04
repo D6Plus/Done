@@ -22,4 +22,8 @@ public interface GroupDAO {
     void joinGroup(@Param("User") User user,@Param("Group") Group group);
     //退出小组
     void quitGroup(@Param("User") User user,@Param("Group") Group group);
+    //查询所有小组
+    List<Group> queryAllGroup();
+    //通过名字查询小组
+    List<Group> queryGroupByName(@Param("groupName")String groupName);
 }

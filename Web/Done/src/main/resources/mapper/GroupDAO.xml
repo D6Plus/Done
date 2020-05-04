@@ -39,5 +39,15 @@
         delete from `userrole` where userID=#{User.userID} and groupID=#{Group.groupID}
     </delete>
 
+    <!--查询所有小组-->
+    <select id="queryAllGroup" resultType="com.done.entity.Group">
+        select * from `group`
+    </select>
+
+    <!--通过名字查询小组-->
+    <select id="queryGroupByName" resultType="com.done.entity.Group">
+        select * from `group` where groupName=#{groupName}
+    </select>
+
 
 </mapper>

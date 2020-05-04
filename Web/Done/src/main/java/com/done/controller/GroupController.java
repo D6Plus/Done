@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -63,4 +64,29 @@ public class GroupController {
         System.out.println("接受来自前台JSON的转化对象"+user);
         groupService.quitGroup(user,group);
     }
+
+    /**
+     * 查询所有小组
+     * @return
+     */
+    @RequestMapping(value = "queryAllGroup",produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public List<Group> queryAllGroup(){
+        List<Group> groupList=groupService.queryAllGroup();
+        return groupList;
+    }
+
+    /**
+     * 通过名字查询小组
+     * @param groupName
+     * @return
+     */
+    @RequestMapping(value = "queryGroupByName",produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public List<Group> queryGroupByName(@RequestBody String groupName){
+        List<Group> groupList=groupService.queryGroupByName(groupName);
+        return groupList;
+    }
+
+
 }
