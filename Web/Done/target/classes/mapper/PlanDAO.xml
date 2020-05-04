@@ -20,5 +20,7 @@
     <select id="getLastID" resultType="java.lang.String">
         select planID from `plan` order by planID desc limit 1
     </select>
-
+    <select id="deletePlanByID">
+        delete from `plan` where planID = #{planID}
+    </select>
 </mapper>

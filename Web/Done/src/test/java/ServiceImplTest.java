@@ -24,13 +24,18 @@ public class ServiceImplTest extends BaseTest {
                 new Date(),
                 new Date(),
                 "this is for test");
-        List<Plan> pp=userService.getPlanList();
-        System.out.println(pp);
+        System.out.println(userService.getPlanList());
     }
 
     @Test
     public void createNewGroupTest() {
         userService.createNewGroup("created group", "this is for test");
         System.out.println(userService.getGroupList());
+    }
+
+    @Test
+    public void deletePlanByIDTest(){
+        userService.deletePlanByID("p127");
+        System.out.println(userService.getPlanList());
     }
 }

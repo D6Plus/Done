@@ -94,4 +94,9 @@ public class UserServiceImpl implements UserService {
         String newGroupID = "g" + (Integer.parseInt(groupDAO.getLastID().substring(1)) + 1);
         groupDAO.insertGroup(newGroupID, groupName, groupDescribe);
     }
+
+    @Override
+    public void deletePlanByID(String planID) {
+        planDAO.deletePlanByID(planID);
+    }
 }

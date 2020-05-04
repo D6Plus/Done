@@ -9,14 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/PlanDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/PlanDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/entity/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/Plan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/done/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/done/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/done/dao/PlanDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/done/dao/PlanDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/done/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/done/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/done/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/done/service/impl/UserServiceImpl.class" afterDir="false" />
@@ -129,7 +126,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/javaeewcnmb/tmall" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -157,7 +154,7 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="JUnit.ServiceImplTest.createNewPlanTest">
+  <component name="RunManager" selected="JUnit.ServiceImplTest.deletePlanByIDTest">
     <configuration name="DAOTest.testUserQueryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Done" />
       <option name="PACKAGE_NAME" value="" />
@@ -193,6 +190,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ServiceImplTest" />
       <option name="METHOD_NAME" value="createNewUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceImplTest.deletePlanByIDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Done" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ServiceImplTest" />
+      <option name="METHOD_NAME" value="deletePlanByIDTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -289,9 +296,11 @@
       <item itemvalue="Tomcat Server.DoneServer" />
       <item itemvalue="JUnit.DAOTest.testUserQueryById" />
       <item itemvalue="JUnit.ServiceImplTest.createNewPlanTest" />
+      <item itemvalue="JUnit.ServiceImplTest.deletePlanByIDTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServiceImplTest.deletePlanByIDTest" />
         <item itemvalue="JUnit.ServiceImplTest.createNewPlanTest" />
         <item itemvalue="JUnit.DAOTest.testUserQueryById" />
         <item itemvalue="JUnit.ServiceImplTest.createNewUserTest" />
@@ -348,7 +357,7 @@
       <workItem from="1588477945419" duration="2107000" />
       <workItem from="1588485676575" duration="79000" />
       <workItem from="1588490092718" duration="204000" />
-      <workItem from="1588515824528" duration="8986000" />
+      <workItem from="1588515824528" duration="11722000" />
     </task>
     <task id="LOCAL-00001" summary="init part of DAO,entity,mapper">
       <created>1588071941785</created>
@@ -447,11 +456,12 @@
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1588476253244" />
     <state x="96" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1588308909542" />
     <state x="144" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1588516836089" />
-    <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1588405694678">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="669" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1588569266680">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="446" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1588405694678" />
     <state x="446" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1588229689416" />
+    <state x="669" y="141" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1588569266680" />
     <state x="806" y="448" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588516372089">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -478,11 +488,12 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="237" y="121" key="EnvironmentVariablesDialog/0.0.1280.720@0.0.1280.720" timestamp="1588070986492" />
-    <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1588476353500">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="632" y="206" key="FileChooserDialogImpl" timestamp="1588569065035">
+      <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1588476353500" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1588131891213" />
+    <state x="632" y="206" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1588569065035" />
     <state x="90" y="34" width="1148" height="683" key="GrepConsoleSettings" timestamp="1588303115463">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -491,34 +502,34 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="526" y="304" key="GrepConsoleSound/0.0.1280.720@0.0.1280.720" timestamp="1588130204396" />
-    <state width="1798" height="164" key="GridCell.Tab.0.bottom" timestamp="1588564855750">
+    <state width="1798" height="164" key="GridCell.Tab.0.bottom" timestamp="1588569595898">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="1798" height="164" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1588564855750" />
-    <state width="1798" height="164" key="GridCell.Tab.0.center" timestamp="1588564855750">
+    <state width="1798" height="164" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1588569595898" />
+    <state width="1798" height="164" key="GridCell.Tab.0.center" timestamp="1588569595897">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="1798" height="164" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1588564855750" />
-    <state width="1798" height="164" key="GridCell.Tab.0.left" timestamp="1588564855750">
+    <state width="1798" height="164" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1588569595897" />
+    <state width="1798" height="164" key="GridCell.Tab.0.left" timestamp="1588569595897">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="1798" height="164" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1588564855750" />
-    <state width="1798" height="164" key="GridCell.Tab.0.right" timestamp="1588564855750">
+    <state width="1798" height="164" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1588569595897" />
+    <state width="1798" height="164" key="GridCell.Tab.0.right" timestamp="1588569595897">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="1798" height="164" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1588564855750" />
+    <state width="1798" height="164" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1588569595897" />
     <state width="1798" height="330" key="GridCell.Tab.1.bottom" timestamp="1588564770257">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
