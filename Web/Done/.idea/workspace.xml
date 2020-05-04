@@ -274,11 +274,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="完成" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -319,6 +314,7 @@
       <workItem from="1588485676575" duration="79000" />
       <workItem from="1588490092718" duration="204000" />
       <workItem from="1588493937539" duration="25330000" />
+      <workItem from="1588583383230" duration="2099000" />
     </task>
     <task id="LOCAL-00001" summary="init part of DAO,entity,mapper">
       <created>1588071941785</created>
