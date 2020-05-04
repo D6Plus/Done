@@ -18,4 +18,5 @@ public interface GroupDAO {
     //创建小组
     void insertGroup(Group group);
 
+    void insertGroup(String newGroupID, String groupName, String groupDescribe);
 }

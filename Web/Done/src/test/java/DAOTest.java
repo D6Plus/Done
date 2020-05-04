@@ -19,6 +19,24 @@ public class DAOTest extends BaseTest {
     private PlanDAO planDAO;
 
     @Test
+    public void testUerlogin() {
+        String userID = "u1";
+        String pwd = "aaa";
+        User user = userDAO.login(userID,pwd);
+        System.out.println(user);
+    }
+
+    @Test
+    public void createNewUser() {
+        String username="kkk";
+        String userID = "u12";
+        String pwd = "aaa";
+        String role = "test";
+        userDAO.createNewUser(userID,username,pwd,role);
+        System.out.println(username);
+    }
+
+    @Test
     public void testUserQueryById() {
         String userID = "u1";
         User user = userDAO.queryByID(userID);

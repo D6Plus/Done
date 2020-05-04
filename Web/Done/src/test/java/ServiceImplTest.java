@@ -9,8 +9,8 @@ public class ServiceImplTest extends BaseTest {
 
     @Test
     public void createNewUserTest() {
-        userService.createNewUser("created user", "pwd");
-        System.out.println(userService.getUserList());
+        String id = userService.createNewUser("45454", "created user","pwd");
+        System.out.println(id);
     }
 
     @Test

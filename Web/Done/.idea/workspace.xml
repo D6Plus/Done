@@ -6,54 +6,93 @@
       <artifact name="Done:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Web" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Web" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Done" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/Done.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/Done.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/GroupDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/GroupDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/done/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/done/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/done/dao/GroupDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/done/dao/GroupDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/done/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/done/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/done/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/done/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/done/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/done/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ServiceImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="done: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="done: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="groupplan: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
-    <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Done" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -90,26 +129,16 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1b6XMYaX6aj9gNgjsxa9MNjb6DD" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -142,22 +171,41 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="JUnit.GroupTest">
-    <configuration name="GroupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ServiceImplTest.createNewUserTest">
+    <configuration name="DAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Done" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GroupTest" />
+      <option name="MAIN_CLASS_NAME" value="DAOTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceImplTest.createNewGroupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DAOTest.createNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Done" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ServiceImplTest" />
-      <option name="METHOD_NAME" value="createNewGroupTest" />
+      <option name="MAIN_CLASS_NAME" value="DAOTest" />
+      <option name="METHOD_NAME" value="createNewUser" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DAOTest.testUerlogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Done" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DAOTest" />
+      <option name="METHOD_NAME" value="testUerlogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Done" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GroupTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -256,36 +304,23 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ServiceImplTest.createNewGroupTest" />
       <item itemvalue="JUnit.ServiceImplTest.createNewUserTest" />
       <item itemvalue="JUnit.GroupTest" />
       <item itemvalue="npm.frontend" />
       <item itemvalue="Tomcat Server.DoneServer" />
+      <item itemvalue="JUnit.DAOTest" />
+      <item itemvalue="JUnit.DAOTest.testUerlogin" />
+      <item itemvalue="JUnit.DAOTest.createNewUser" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GroupTest" />
         <item itemvalue="JUnit.ServiceImplTest.createNewUserTest" />
-        <item itemvalue="JUnit.ServiceImplTest.createNewGroupTest" />
+        <item itemvalue="JUnit.DAOTest.createNewUser" />
+        <item itemvalue="JUnit.DAOTest.testUerlogin" />
+        <item itemvalue="JUnit.DAOTest" />
+        <item itemvalue="JUnit.GroupTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -320,6 +355,7 @@
       <workItem from="1588485676575" duration="79000" />
       <workItem from="1588490092718" duration="204000" />
       <workItem from="1588493937539" duration="15582000" />
+      <workItem from="1588601109828" duration="6839000" />
     </task>
     <task id="LOCAL-00001" summary="init part of DAO,entity,mapper">
       <created>1588071941785</created>
@@ -388,7 +424,18 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -484,33 +531,37 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="526" y="304" key="GrepConsoleSound/0.0.1280.720@0.0.1280.720" timestamp="1588130204396" />
-    <state width="1860" height="543" key="GridCell.Tab.0.bottom" timestamp="1588515296483">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1588607230252">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588607230252" />
     <state width="1860" height="543" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588515296483" />
-    <state width="1860" height="543" key="GridCell.Tab.0.center" timestamp="1588515296482">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1588607230252">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588607230252" />
     <state width="1860" height="543" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588515296482" />
-    <state width="1860" height="543" key="GridCell.Tab.0.left" timestamp="1588515296482">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1588607230252">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588607230252" />
     <state width="1860" height="543" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588515296482" />
-    <state width="1860" height="543" key="GridCell.Tab.0.right" timestamp="1588515296483">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1588607230252">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588607230252" />
     <state width="1860" height="543" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588515296483" />
     <state width="1281" height="292" key="GridCell.Tab.1.bottom" timestamp="1588512999588">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -610,9 +661,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="533" y="258" width="388" height="228" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.720@0.0.1280.720" timestamp="1588228734117" />
-    <state x="676" y="153" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1588513421565">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="541" y="118" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1588603257601">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="541" y="118" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1588603257601" />
     <state x="676" y="153" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588513421565" />
     <state x="482" y="132" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1588228756515">
       <screen x="0" y="0" width="1280" height="720" />
@@ -627,10 +679,11 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="400" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1588228207994" />
-    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1588383206156">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="364" y="12" width="807" height="821" key="search.everywhere.popup" timestamp="1588605947629">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1588383206156" />
+    <state x="364" y="12" width="807" height="821" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1588605947629" />
     <state x="449" y="95" key="spring file set editor" timestamp="1587954473265">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

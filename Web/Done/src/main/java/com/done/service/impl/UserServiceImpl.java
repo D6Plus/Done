@@ -22,12 +22,18 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserDAO userDAO;
+    /*public void setMapper(UserDAO userDAO){
+    this.userDAO = userDAO;
+    }
+    */
 
     @Autowired
     private PlanDAO planDAO;
 
     @Autowired
     private GroupDAO groupDAO;
+
+
 
     @Override
     public User getUserByID(String userID) {
@@ -75,9 +81,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void createNewUser(String userName, String pwd) {
-        String newUserID = "u" + (Integer.parseInt(userDAO.getLastID().substring(1)) + 1);
-        userDAO.insertUser(newUserID, userName, pwd, "test");
+    public User login(String userID, String pwd) {
+        return userDAO.login(userID,pwd);
+    }
+
+    @Override
+    public String createNewUser(String newUserID, String userName,  String pwd) {
+        userDAO.createNewUser(newUserID, userName, pwd, "test");
+        return newUserID;
     }
 
     @Override
@@ -87,9 +98,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void createNewGroup(String planName, String planDescribe) {
-
+    public void createNewGroup(String groupName, String groupDescribe) {
+        String newGroupID = "g" + (Integer.parseInt(groupDAO.getLastID().substring(1)) + 1);
+        groupDAO.insertGroup(newGroupID, groupName, groupDescribe);
     }
-
-
 }
