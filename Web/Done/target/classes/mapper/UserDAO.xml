@@ -27,6 +27,13 @@
         where userID = #{userID};
     </update>
 
+    <update id="changeRole">
+        update user
+        set role = #{newrole}
+        where userID = #{userID};
+    </update>
+
+
     <select id="queryByID" resultType="com.done.entity.User">
 		select * from `user` where userID = #{userID}
     </select>

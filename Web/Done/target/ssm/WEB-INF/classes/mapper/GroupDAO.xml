@@ -22,6 +22,6 @@
 
     <!-- 创建小组 -->
     <insert id="insertGroup" parameterType="com.done.entity.Group" useGeneratedKeys="true" keyProperty="groupID" >
-        insert into group(groupName,groupDescribe) values(#{gourpName},#{groupDescribe});
+        INSERT INTO group VALUES(#{groupName},#{groupDescribe})
     </insert>
 </mapper>

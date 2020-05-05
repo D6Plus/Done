@@ -86,13 +86,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String createNewUser(String newUserID, String userName,  String pwd) {
+    public boolean createNewUser(String newUserID, String userName,  String pwd) {
         if(userDAO.queryByID(newUserID)==null){
             userDAO.createNewUser(newUserID, userName, pwd, "test");
-            return newUserID;
+            return true;
         }
         else{
-            return null;
+            return false;
         }
     }
 
