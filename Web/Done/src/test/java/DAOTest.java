@@ -19,7 +19,7 @@ public class DAOTest extends BaseTest {
     private PlanDAO planDAO;
 
     @Test
-    public void testUerlogin() {
+    public void testUserlogin() {
         String userID = "u1";
         String pwd = "aaa";
         User user = userDAO.login(userID,pwd);
@@ -27,13 +27,32 @@ public class DAOTest extends BaseTest {
     }
 
     @Test
-    public void createNewUser() {
+    public void testCreateNewUser() {
         String username="kkk";
         String userID = "u12";
         String pwd = "aaa";
         String role = "test";
         userDAO.createNewUser(userID,username,pwd,role);
         System.out.println(username);
+    }
+
+    @Test
+    public void testUpdateMassage() {
+        String userID = "u12";
+        String username = "哈哈哈";
+        String pNum = "13556465465";
+        String userSex = "男";
+        String userBirth = "1999-06-24";
+        userDAO.updateMassage(userID,username,pNum,userSex,userBirth);
+        System.out.println(userDAO.getMassage(userID));
+    }
+
+    @Test
+    public void testChangePwd() {
+        String userID = "u1";
+        String newpwd = "bbb";
+        userDAO.changePwd(userID,newpwd);
+        System.out.println(userDAO.queryByID(userID).getPwd());
     }
 
     @Test

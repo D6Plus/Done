@@ -11,6 +11,22 @@
         select userName,userID from `user` where userID = #{userID} and pwd = #{pwd}
     </select>
 
+    <update id="changePwd">
+        update user
+        set pwd = #{newpwd}
+        where userID = #{userID};
+    </update>
+
+    <select id="getMassage" resultType="com.done.entity.User">
+        select userName,pNum,userSex,userBirth from `user` where userID = #{userID}
+    </select>
+
+    <update id="updateMassage">
+        update user
+        set userName = #{userName},pNum = #{pNum},userSex = #{userSex},userBirth = #{userBirth}
+        where userID = #{userID};
+    </update>
+
     <select id="queryByID" resultType="com.done.entity.User">
 		select * from `user` where userID = #{userID}
     </select>

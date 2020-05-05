@@ -87,8 +87,56 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public String createNewUser(String newUserID, String userName,  String pwd) {
-        userDAO.createNewUser(newUserID, userName, pwd, "test");
-        return newUserID;
+        if(userDAO.queryByID(newUserID)==null){
+            userDAO.createNewUser(newUserID, userName, pwd, "test");
+            return newUserID;
+        }
+        else{
+            return null;
+        }
+    }
+
+    @Override
+    public boolean changePwd1(String userID, String pwd, String newpwd){
+        if(userDAO.login(userID, pwd) != null){
+            userDAO.changePwd(userID, newpwd);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    @Override
+    public boolean changePwd2(String userID, String newpwd){
+        if(userDAO.queryByID(userID) != null){
+            userDAO.changePwd(userID, newpwd);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    @Override
+    public boolean changeRole(String userID, String newrole){
+        if(userDAO.queryByID(userID) != null){
+            userDAO.changeRole(userID, newrole);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    @Override
+    public User getMassage(String userID){
+        return userDAO.getMassage(userID);
+    }
+
+    @Override
+    public void updateMassage(String userID, String userName, String pNum, String userSex, String userBirth){
+        userDAO.updateMassage(userID, userName, pNum, userSex, userBirth);
     }
 
     @Override

@@ -8,11 +8,13 @@ import java.util.List;
 
 @Repository
 public interface UserDAO {
-    public User login(@Param("userID") String userID, @Param("pwd") String pwd);
-    public void createNewUser(@Param("newUserID") String newUserID, @Param("userName") String userName,@Param("pwd") String pwd ,@Param("role") String role);
-    public User getMassage(@Param("userID") String userID);
-    public void updateMassage(@Param("userID") String userID,@Param("userName") String userName,@Param("pNum") String pNum,
+    User login(@Param("userID") String userID, @Param("pwd") String pwd);
+    void createNewUser(@Param("newUserID") String newUserID, @Param("userName") String userName,@Param("pwd") String pwd ,@Param("role") String role);
+    void changePwd(@Param("userID") String userID,@Param("newpwd") String newpwd);
+    User getMassage(@Param("userID") String userID);
+    void updateMassage(@Param("userID") String userID,@Param("userName") String userName,@Param("pNum") String pNum,
                               @Param("userSex") String userSex,@Param("userBirth") String userBirth);
+    void changeRole(@Param("userID") String userID,@Param("newrole") String newrole);
     User queryByID(@Param("userID") String userID);
     List<User> queryByName(@Param("userName") String userName);
     List<User> queryAll();
