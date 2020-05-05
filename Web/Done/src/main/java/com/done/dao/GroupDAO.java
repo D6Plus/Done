@@ -17,5 +17,13 @@ public interface GroupDAO {
 
     //创建小组
     void insertGroup(Group group);
-
+    void insertUserrole(@Param("Group")Group group,@Param("User") User user);
+    //加入小组
+    void joinGroup(@Param("User") User user,@Param("Group") Group group);
+    //退出小组
+    void quitGroup(@Param("User") User user,@Param("Group") Group group);
+    //查询所有小组
+    List<Group> queryAllGroup();
+    //通过名字查询小组
+    List<Group> queryGroupByName(@Param("groupName")String groupName);
 }
