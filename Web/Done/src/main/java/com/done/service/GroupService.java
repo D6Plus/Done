@@ -1,4 +1,4 @@
-package com.done.service.impl;
+package com.done.service;
 
 import com.done.entity.Group;
 import com.done.entity.User;

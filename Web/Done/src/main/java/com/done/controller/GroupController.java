@@ -2,9 +2,8 @@ package com.done.controller;
 
 import com.done.entity.Group;
 import com.done.entity.User;
-import com.done.service.impl.GroupService;
+import com.done.service.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
