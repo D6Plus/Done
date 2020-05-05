@@ -21,8 +21,11 @@ public interface UserService {
     List<Group> getGroupList();
     List<Group> getGroupByName(String groupName);
 
-    //登录
+    //前台登录
     User login(String userID, String pwd);
+
+    //后台登录
+    User login2(String userID, String pwd);
 
     //注册
     boolean createNewUser(String newUserID ,String userName, String pwd);

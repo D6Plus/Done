@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 
 
 @Service
@@ -86,9 +87,25 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User login2(String userID, String pwd) {
+        User user = userDAO.login(userID,pwd);
+        if(user != null) {
+            if(Objects.equals(user.getRole(), "1")) {
+                return user;
+            }
+            else {
+                return null;
+            }
+        }
+        else{
+            return null;
+        }
+    }
+
+    @Override
     public boolean createNewUser(String newUserID, String userName,  String pwd) {
         if(userDAO.queryByID(newUserID)==null){
-            userDAO.createNewUser(newUserID, userName, pwd, "test");
+            userDAO.createNewUser(newUserID, userName, pwd, "0");
             return true;
         }
         else{

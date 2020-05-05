@@ -10,15 +10,22 @@ public class ServiceImplTest extends BaseTest {
 
     @Test
     public void createNewUserTest() {
-        String id = userService.createNewUser("45454", "created user","pwd");
-        System.out.println(id);
+        boolean a = userService.createNewUser("45454", "created user","pwd");
+        System.out.println(a);
     }
 
     @Test
-    public void loginTest() {
-        User user = userService.login("u1", "aaa");
+    public void loginTest1() {
+        User user = userService.login("u1", "bbb");
         System.out.println(user);
     }
+
+    @Test
+    public void loginTest2() {
+        User user = userService.login2("u1", "bbb");
+        System.out.println(user);
+    }
+
 
     @Test
     public void changePwd1Test() {

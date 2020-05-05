@@ -33,6 +33,10 @@ public class User {
           return pwd;
      }
 
+     public String getRole() {
+          return role;
+     }
+
      public String getpNum() {
           return pNum;
      }
