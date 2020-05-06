@@ -147,6 +147,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public void setRole(String userID,String role){
+         userDAO.setRole(userID, role);
+    }
+
+    @Override
     public User getMassage(String userID){
         return userDAO.getMassage(userID);
     }

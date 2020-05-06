@@ -56,10 +56,10 @@
   <component name="ChangeListManager">
     <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDAO.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,13 +278,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.frontend" />
-      <item itemvalue="Tomcat Server.DoneServer" />
       <item itemvalue="JUnit.ServiceImplTest.login0Test" />
       <item itemvalue="JUnit.ServiceImplTest.createNewUserTest" />
       <item itemvalue="JUnit.ServiceImplTest.loginTest" />
       <item itemvalue="JUnit.ServiceImplTest.loginTest2" />
       <item itemvalue="JUnit.ServiceImplTest.loginTest1" />
+      <item itemvalue="npm.frontend" />
+      <item itemvalue="Tomcat Server.DoneServer" />
     </list>
     <recent_temporary>
       <list>
@@ -331,7 +331,8 @@
       <workItem from="1588493937539" duration="15582000" />
       <workItem from="1588601109828" duration="11570000" />
       <workItem from="1588662581661" duration="1750000" />
-      <workItem from="1588678278633" duration="2493000" />
+      <workItem from="1588678278633" duration="2853000" />
+      <workItem from="1588748775625" duration="458000" />
     </task>
     <task id="LOCAL-00001" summary="init part of DAO,entity,mapper">
       <created>1588071941785</created>
@@ -508,37 +509,37 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="526" y="304" key="GrepConsoleSound/0.0.1280.720@0.0.1280.720" timestamp="1588130204396" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1588680855662">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1588681226912">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588680855662" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588681226912" />
     <state width="1860" height="543" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588515296483" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1588680855662">
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1588681226912">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588680855662" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588681226912" />
     <state width="1860" height="543" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588515296482" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1588680855662">
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1588681226912">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588680855662" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588681226912" />
     <state width="1860" height="543" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588515296482" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1588680855662">
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1588681226912">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1240" height="165" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1588476356721" />
     <state width="846" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588308965142" />
     <state width="1493" height="187" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587957393412" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588680855662" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588681226912" />
     <state width="1860" height="543" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588515296483" />
     <state width="1024" height="214" key="GridCell.Tab.1.bottom" timestamp="1588656679978">
       <screen x="0" y="0" width="1536" height="834" />

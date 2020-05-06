@@ -39,6 +39,9 @@ public interface UserService {
     //用户修改密码
     boolean changePwd1(String userID, String pwd, String newpwd);
 
+    //后台修改用户权限
+    void setRole(String userID,String role);
+
     //管理员后台修改用户的密码
     boolean changePwd2(String userID, String newpwd);
 

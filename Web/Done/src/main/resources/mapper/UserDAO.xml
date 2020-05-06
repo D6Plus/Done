@@ -19,6 +19,12 @@
         where userID = #{userID};
     </update>
 
+    <update id="setRole">
+        update user
+        set role = #{role}
+        where userID = #{userID}
+    </update>
+
     <select id="getMassage" resultType="com.done.entity.User">
         select userName,pNum,userSex,userBirth from `user` where userID = #{userID}
     </select>
