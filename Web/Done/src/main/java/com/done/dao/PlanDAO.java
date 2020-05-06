@@ -32,4 +32,5 @@ public interface PlanDAO {
                     @Param("planRelease") Date planRelease,
                     @Param("planDeadline") Date planDeadline,
                     @Param("planDescribe") String planDescribe);
+
 }

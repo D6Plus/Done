@@ -10,9 +10,6 @@
     <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/done/dao/PlanDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/dao/PlanDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +117,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/javaeewcnmb/tmall" />
+    <property name="last_opened_file_path" value="D:/zgtmall/tmall" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -148,7 +145,17 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="JUnit.ServiceImplTest.updatePlanTest">
+  <component name="RunManager" selected="JUnit.DAOTest.testPlanQueryAll">
+    <configuration name="DAOTest.testPlanQueryAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Done" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DAOTest" />
+      <option name="METHOD_NAME" value="testPlanQueryAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DAOTest.testUserQueryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Done" />
       <option name="PACKAGE_NAME" value="" />
@@ -164,16 +171,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ServiceImplTest" />
       <option name="METHOD_NAME" value="createNewPlanTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceImplTest.createNewUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Done" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ServiceImplTest" />
-      <option name="METHOD_NAME" value="createNewUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -284,21 +281,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ServiceImplTest.createNewUserTest" />
       <item itemvalue="npm.frontend" />
       <item itemvalue="Tomcat Server.DoneServer" />
       <item itemvalue="JUnit.DAOTest.testUserQueryById" />
       <item itemvalue="JUnit.ServiceImplTest.createNewPlanTest" />
       <item itemvalue="JUnit.ServiceImplTest.deletePlanByIDTest" />
       <item itemvalue="JUnit.ServiceImplTest.updatePlanTest" />
+      <item itemvalue="JUnit.DAOTest.testPlanQueryAll" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DAOTest.testPlanQueryAll" />
         <item itemvalue="JUnit.ServiceImplTest.updatePlanTest" />
         <item itemvalue="JUnit.ServiceImplTest.deletePlanByIDTest" />
         <item itemvalue="JUnit.ServiceImplTest.createNewPlanTest" />
         <item itemvalue="JUnit.DAOTest.testUserQueryById" />
-        <item itemvalue="JUnit.ServiceImplTest.createNewUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +348,7 @@
       <workItem from="1588477945419" duration="2107000" />
       <workItem from="1588485676575" duration="79000" />
       <workItem from="1588490092718" duration="204000" />
-      <workItem from="1588515824528" duration="12986000" />
+      <workItem from="1588515824528" duration="16582000" />
     </task>
     <task id="LOCAL-00001" summary="init part of DAO,entity,mapper">
       <created>1588071941785</created>
@@ -482,12 +479,12 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="237" y="121" key="EnvironmentVariablesDialog/0.0.1280.720@0.0.1280.720" timestamp="1588070986492" />
-    <state x="632" y="206" key="FileChooserDialogImpl" timestamp="1588569065035">
+    <state x="632" y="206" key="FileChooserDialogImpl" timestamp="1588675061665">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1588476353500" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1588131891213" />
-    <state x="632" y="206" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1588569065035" />
+    <state x="632" y="206" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1588675061665" />
     <state x="90" y="34" width="1148" height="683" key="GrepConsoleSettings" timestamp="1588303115463">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
