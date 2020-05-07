@@ -93,6 +93,9 @@ public class UserServiceImpl implements UserService {
         String newPlanID = "p" + (Integer.parseInt(planDAO.getLastID().substring(1)) + 1);
         planDAO.insertPlan(newPlanID, planName, planHeading,
                 planRelease, planDeadline, planDescribe);
+    }
+
+    @Override
     public User login2(String userID, String pwd) {
         User user = userDAO.login(userID,pwd);
         if(user != null) {
@@ -152,6 +155,7 @@ public class UserServiceImpl implements UserService {
                            Date planDeadline, String planDescribe) {
         planDAO.updatePlan(planID, planName, planHeading,
                 planRelease, planDeadline, planDescribe);
+    }
     public boolean changeRole(String userID, String newrole){
         if(userDAO.queryByID(userID) != null){
             userDAO.changeRole(userID, newrole);
