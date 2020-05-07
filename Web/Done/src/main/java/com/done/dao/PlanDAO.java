@@ -33,4 +33,5 @@ public interface PlanDAO {
                     @Param("planDeadline") Date planDeadline,
                     @Param("planDescribe") String planDescribe);
 
+    void insertPlan(String newPlanID, String planName, String planDescribe);
 }
