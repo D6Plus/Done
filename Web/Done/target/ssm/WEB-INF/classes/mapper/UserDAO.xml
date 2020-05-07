@@ -8,13 +8,21 @@
     </insert>
 
     <select id="login" resultType="com.done.entity.User">
-        select userName,userID from `user` where userID = #{userID} and pwd = #{pwd}
+        select userName,userID,role
+        from `user`
+        where userID = #{userID} and pwd = #{pwd}
     </select>
 
     <update id="changePwd">
         update user
         set pwd = #{newpwd}
         where userID = #{userID};
+    </update>
+
+    <update id="setRole">
+        update user
+        set role = #{role}
+        where userID = #{userID}
     </update>
 
     <select id="getMassage" resultType="com.done.entity.User">
@@ -45,6 +53,7 @@
     <select id="queryByName" resultType="com.done.entity.User">
         select * from `user` where userName = #{userName}
     </select>
+
     <select id="getLastID" resultType="java.lang.String">
         select userID from `user` order by userID desc limit 1
     </select>
