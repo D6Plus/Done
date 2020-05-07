@@ -64,7 +64,7 @@ public class UserController {
     }
 
     /**
-     * 注册
+     * 登录
      * @param userID
      * @param pwd
      * @return
