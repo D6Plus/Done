@@ -57,7 +57,7 @@ public class UserController {
      * @return
      */
     @ResponseBody
-    @RequestMapping(value = "queryUserByName",produces = "application/json;charset=utf-8")
+    @RequestMapping(value = "queryUserByID",produces = "application/json;charset=utf-8")
     public User queryUserByID(@RequestBody String UserID){
         User user= userService.getUserByID(UserID);
         return user;
@@ -113,7 +113,7 @@ public class UserController {
      * 修改资料
      */
     @ResponseBody
-    @RequestMapping(value = "changePwd", method = RequestMethod.POST)
+    @RequestMapping(value = "changeMassage", method = RequestMethod.POST)
     public boolean updateMassage( @RequestBody User user){
         userService.updateMassage(user.getUserID(), user.getUserName(), user.getpNum(), user.getUserSex(), user.getUserBirth());
         return true;
