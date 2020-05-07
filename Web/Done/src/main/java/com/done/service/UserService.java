@@ -22,9 +22,7 @@ public interface UserService {
     List<Group> getGroupList();
     List<Group> getGroupByName(String groupName);
 
-
     void createNewUser(String userName, String pwd);
-
     //前台登录
     User login(String userID, String pwd);
 
@@ -51,7 +49,6 @@ public interface UserService {
 
 
     void createNewPlan(String planName, String planDescribe);
-
     void createNewGroup(String planName, String planDescribe);
 
 

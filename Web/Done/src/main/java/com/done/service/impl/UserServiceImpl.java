@@ -88,6 +88,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public void createNewPlan(String planName, String planHeading, Date planRelease,
+                              Date planDeadline, String planDescribe) {
+        String newPlanID = "p" + (Integer.parseInt(planDAO.getLastID().substring(1)) + 1);
+        planDAO.insertPlan(newPlanID, planName, planHeading,
+                planRelease, planDeadline, planDescribe);
     public User login2(String userID, String pwd) {
         User user = userDAO.login(userID,pwd);
         if(user != null) {
@@ -137,6 +142,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public void deletePlanByID(String planID) {
+        planDAO.deletePlanByID(planID);
+    }
+
+    @Override
+    public void updatePlan(String planID, String planName,
+                           String planHeading, Date planRelease,
+                           Date planDeadline, String planDescribe) {
+        planDAO.updatePlan(planID, planName, planHeading,
+                planRelease, planDeadline, planDescribe);
     public boolean changeRole(String userID, String newrole){
         if(userDAO.queryByID(userID) != null){
             userDAO.changeRole(userID, newrole);
@@ -158,29 +173,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void createNewPlan(String planName, String planHeading, Date planRelease,
-                              Date planDeadline, String planDescribe) {
+    public void createNewPlan(String planName, String planDescribe) {
         String newPlanID = "p" + (Integer.parseInt(planDAO.getLastID().substring(1)) + 1);
-        planDAO.insertPlan(newPlanID, planName, planHeading,
-                planRelease, planDeadline, planDescribe);
+        planDAO.insertPlan(newPlanID, planName, planDescribe);
     }
 
     @Override
     public void createNewGroup(String groupName, String groupDescribe) {
         String newGroupID = "g" + (Integer.parseInt(groupDAO.getLastID().substring(1)) + 1);
         groupDAO.insertGroup(newGroupID, groupName, groupDescribe);
-    }
-
-    @Override
-    public void deletePlanByID(String planID) {
-        planDAO.deletePlanByID(planID);
-    }
-
-    @Override
-    public void updatePlan(String planID, String planName,
-                           String planHeading, Date planRelease,
-                           Date planDeadline, String planDescribe) {
-        planDAO.updatePlan(planID, planName, planHeading,
-                planRelease, planDeadline, planDescribe);
     }
 }
