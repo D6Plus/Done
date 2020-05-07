@@ -7,13 +7,13 @@ import org.springframework.stereotype.Component;
 public class Group {
 
     @JSONField(name = "groupID")
-    private String groupID;
+    private int groupID;
     @JSONField(name = "groupName")
     private String groupName;
     @JSONField(name = "groupDescribe")
     private String groupDescribe;
 
-    public String getGroupID() {
+    public int getGroupID() {
         return groupID;
     }
 
@@ -25,7 +25,7 @@ public class Group {
         return groupDescribe;
     }
 
-    public void setGroupID(String groupID) {
+    public void setGroupID(int groupID) {
         this.groupID = groupID;
     }
 
