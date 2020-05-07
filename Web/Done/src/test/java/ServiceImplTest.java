@@ -26,6 +26,23 @@ public class ServiceImplTest extends BaseTest {
         System.out.println(user);
     }
 
+    @Test
+    public void getMassageTest() {
+        User user = userService.getMassage("u1");
+        System.out.println(user);
+    }
+
+    @Test
+    public void updateMassageTest() {
+        userService.updateMassage("u1","小明","13546478795","男","1998-4-3");
+        System.out.println(userService.getMassage("u1"));
+    }
+
+    @Test
+    public void changeRoleTest() {
+        userService.changeRole("u1","0");
+        System.out.println(userService.getUserByID("u1").getRole());
+    }
 
     @Test
     public void changePwd1Test() {

@@ -56,6 +56,9 @@
   <component name="ChangeListManager">
     <list default="true" id="603616a7-1c75-41b0-9640-ef126d3c05c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,6 +332,7 @@
       <workItem from="1588662581661" duration="1750000" />
       <workItem from="1588678278633" duration="2853000" />
       <workItem from="1588748775625" duration="1064000" />
+      <workItem from="1588831246084" duration="3606000" />
     </task>
     <task id="LOCAL-00001" summary="init part of DAO,entity,mapper">
       <created>1588071941785</created>
