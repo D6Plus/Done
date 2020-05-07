@@ -44,8 +44,8 @@ public class UserController {
      * @param UserName
      * @return
      */
-    @RequestMapping(value = "queryUserByName",produces = "application/json;charset=utf-8")
     @ResponseBody
+    @RequestMapping(value = "queryUserByName",produces = "application/json;charset=utf-8")
     public List<User> queryUserByName(@RequestBody String UserName){
         List<User> UserList= userService.getUserByName(UserName);
         return UserList;
@@ -56,28 +56,81 @@ public class UserController {
      * @param UserID
      * @return
      */
-    @RequestMapping(value = "queryUserByName",produces = "application/json;charset=utf-8")
     @ResponseBody
+    @RequestMapping(value = "queryUserByName",produces = "application/json;charset=utf-8")
     public User queryUserByID(@RequestBody String UserID){
         User user= userService.getUserByID(UserID);
         return user;
     }
 
-    /**
-     * 登录
-     * @param userID
-     * @param pwd
-     * @return
+    /*
+     * 前台登录
      */
-    @RequestMapping(value = "login", method = RequestMethod.POST)
-    public String login (Model model,@RequestBody String userID,@RequestParam String pwd){
-        User user = userService.login(userID,pwd);
+    @ResponseBody
+    @RequestMapping(value = "login1",produces = "application/json;charset=utf-8", method = RequestMethod.POST)
+    public String login1 (@RequestBody User user){
+        User user1 = userService.login(user.getUserID(),user.getPwd());
         if(user!=null) {
-            return null;
-        }
-        else{
-            String jsonOutput = JSON.toJSONString(user);
+            String jsonOutput = JSON.toJSONString(user1);
             return jsonOutput;
         }
+        else{
+            return null;
+        }
     }
+
+    /*
+     * 后台登录
+     */
+    @ResponseBody
+    @RequestMapping(value = "login2",produces = "application/json;charset=utf-8", method = RequestMethod.POST)
+    public String login2 (@RequestBody User user){
+        User user1 = userService.login2(user.getUserID(),user.getPwd());
+        if(user!=null) {
+            String jsonOutput = JSON.toJSONString(user1);
+            return jsonOutput;
+        }
+        else{
+            return null;
+        }
+    }
+
+    /*
+     * 修改密码
+     */
+    @ResponseBody
+    @RequestMapping(value = "changePwd", method = RequestMethod.POST)
+    public boolean changePwd(@RequestBody User user){
+        if(userService.changePwd2(user.getUserID(),user.getPwd())) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    /*
+     * 修改资料
+     */
+    @ResponseBody
+    @RequestMapping(value = "changePwd", method = RequestMethod.POST)
+    public boolean updateMassage( @RequestBody User user){
+        userService.updateMassage(user.getUserID(), user.getUserName(), user.getpNum(), user.getUserSex(), user.getUserBirth());
+        return true;
+    }
+
+    /**
+     * 通过ID查询用户资料
+     * @param UserID
+     * @return
+     */
+    @RequestMapping(value = "getMassage",produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public String getMassageByID(@RequestBody String UserID){
+        User user= userService.getMassage(UserID);
+        String jsonOutput = JSON.toJSONString(user);
+        return jsonOutput;
+    }
+
+
 }

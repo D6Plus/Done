@@ -37,7 +37,7 @@ public interface UserService {
     User getMassage(String userID);
 
     //修改个人信息
-    void updateMassage(String userID, String userName, String pNum, String userSex, String userBirth);
+    boolean updateMassage(String userID, String userName, String pNum, String userSex, String userBirth);
 
     //用户修改密码
     boolean changePwd1(String userID, String pwd, String newpwd);

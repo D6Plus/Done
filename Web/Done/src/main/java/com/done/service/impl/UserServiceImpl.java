@@ -172,8 +172,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void updateMassage(String userID, String userName, String pNum, String userSex, String userBirth){
+    public boolean updateMassage(String userID, String userName, String pNum, String userSex, String userBirth){
         userDAO.updateMassage(userID, userName, pNum, userSex, userBirth);
+        return true;
     }
 
     @Override
