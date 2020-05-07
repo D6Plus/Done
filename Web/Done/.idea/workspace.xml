@@ -76,7 +76,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -119,6 +119,7 @@
       <workItem from="1588841180354" duration="173000" />
       <workItem from="1588841375128" duration="804000" />
       <workItem from="1588842213681" duration="1189000" />
+      <workItem from="1588851636052" duration="3077000" />
     </task>
     <servers />
   </component>
@@ -175,13 +176,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588840924347" />
-    <state x="448" y="115" key="SettingsEditor" timestamp="1588841030983">
+    <state x="448" y="115" key="SettingsEditor" timestamp="1588852088230">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="448" y="115" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1588841030983" />
-    <state x="658" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1588842213803">
+    <state x="448" y="115" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1588852088230" />
+    <state x="658" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1588851635686">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="658" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588842213803" />
+    <state x="658" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588851635686" />
   </component>
 </project>
