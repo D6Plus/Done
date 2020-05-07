@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 
 @Service
@@ -23,12 +24,18 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserDAO userDAO;
+    /*public void setMapper(UserDAO userDAO){
+    this.userDAO = userDAO;
+    }
+    */
 
     @Autowired
     private PlanDAO planDAO;
 
     @Autowired
     private GroupDAO groupDAO;
+
+
 
     @Override
     public User getUserByID(String userID) {
@@ -76,9 +83,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void createNewUser(String userName, String pwd) {
-        String newUserID = "u" + (Integer.parseInt(userDAO.getLastID().substring(1)) + 1);
-        userDAO.insertUser(newUserID, userName, pwd, "test");
+    public User login(String userID, String pwd) {
+        return userDAO.login(userID,pwd);
     }
 
     @Override
@@ -87,11 +93,52 @@ public class UserServiceImpl implements UserService {
         String newPlanID = "p" + (Integer.parseInt(planDAO.getLastID().substring(1)) + 1);
         planDAO.insertPlan(newPlanID, planName, planHeading,
                 planRelease, planDeadline, planDescribe);
+    public User login2(String userID, String pwd) {
+        User user = userDAO.login(userID,pwd);
+        if(user != null) {
+            if(Objects.equals(user.getRole(), "1")) {
+                return user;
+            }
+            else {
+                return null;
+            }
+        }
+        else{
+            return null;
+        }
     }
 
     @Override
-    public void createNewGroup(String planName, String planDescribe) {
+    public boolean createNewUser(String newUserID, String userName,  String pwd) {
+        if(userDAO.queryByID(newUserID)==null){
+            userDAO.createNewUser(newUserID, userName, pwd, "0");
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
+    @Override
+    public boolean changePwd1(String userID, String pwd, String newpwd){
+        if(userDAO.login(userID, pwd) != null){
+            userDAO.changePwd(userID, newpwd);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    @Override
+    public boolean changePwd2(String userID, String newpwd){
+        if(userDAO.queryByID(userID) != null){
+            userDAO.changePwd(userID, newpwd);
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override
@@ -105,5 +152,35 @@ public class UserServiceImpl implements UserService {
                            Date planDeadline, String planDescribe) {
         planDAO.updatePlan(planID, planName, planHeading,
                 planRelease, planDeadline, planDescribe);
+    public boolean changeRole(String userID, String newrole){
+        if(userDAO.queryByID(userID) != null){
+            userDAO.changeRole(userID, newrole);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    @Override
+    public User getMassage(String userID){
+        return userDAO.getMassage(userID);
+    }
+
+    @Override
+    public void updateMassage(String userID, String userName, String pNum, String userSex, String userBirth){
+        userDAO.updateMassage(userID, userName, pNum, userSex, userBirth);
+    }
+
+    @Override
+    public void createNewPlan(String planName, String planDescribe) {
+        String newPlanID = "p" + (Integer.parseInt(planDAO.getLastID().substring(1)) + 1);
+        planDAO.insertPlan(newPlanID, planName, planDescribe);
+    }
+
+    @Override
+    public void createNewGroup(String groupName, String groupDescribe) {
+        String newGroupID = "g" + (Integer.parseInt(groupDAO.getLastID().substring(1)) + 1);
+        groupDAO.insertGroup(newGroupID, groupName, groupDescribe);
     }
 }

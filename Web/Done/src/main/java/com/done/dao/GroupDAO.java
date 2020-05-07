@@ -26,4 +26,6 @@ public interface GroupDAO {
     List<Group> queryAllGroup();
     //通过名字查询小组
     List<Group> queryGroupByName(@Param("groupName")String groupName);
+
+    void insertGroup(String newGroupID, String groupName, String groupDescribe);
 }

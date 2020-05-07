@@ -3,9 +3,37 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.done.dao.UserDAO">
-    <insert id="insertUser">
-        insert into `user` value (#{userID}, #{userName}, #{pwd}, #{role})
+    <insert id="createNewUser">
+        insert into `user` (userID, userName, pwd, role) value (#{newUserID}, #{userName}, #{pwd}, #{role})
     </insert>
+
+    <select id="login" resultType="com.done.entity.User">
+        select userName,userID from `user` where userID = #{userID} and pwd = #{pwd}
+    </select>
+
+    <update id="changePwd">
+        update user
+        set pwd = #{newpwd}
+        where userID = #{userID};
+    </update>
+
+    <select id="getMassage" resultType="com.done.entity.User">
+        select userName,pNum,userSex,userBirth from `user` where userID = #{userID}
+    </select>
+
+    <update id="updateMassage">
+        update user
+        set userName = #{userName},pNum = #{pNum},userSex = #{userSex},userBirth = #{userBirth}
+        where userID = #{userID};
+    </update>
+
+    <update id="changeRole">
+        update user
+        set role = #{newrole}
+        where userID = #{userID};
+    </update>
+
+
     <select id="queryByID" resultType="com.done.entity.User">
 		select * from `user` where userID = #{userID}
     </select>

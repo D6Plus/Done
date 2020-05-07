@@ -14,6 +14,12 @@ public class User {
      private String pwd;
      @JSONField(name = "role")
      private String role;
+     @JSONField(name = "pNum")
+     private String pNum;
+     @JSONField(name = "userSex")
+     private String userSex;
+     @JSONField(name = "userBirth")
+     private String userBirth;
 
      public String getUserID() {
           return userID;
@@ -31,6 +37,18 @@ public class User {
           return role;
      }
 
+     public String getpNum() {
+          return pNum;
+     }
+
+     public String getUserSex() {
+          return userSex;
+     }
+
+     public String getUserBirth() {
+          return userBirth;
+     }
+
      public void setUserID(String userID) {
           this.userID = userID;
      }
@@ -43,8 +61,14 @@ public class User {
           this.pwd = pwd;
      }
 
-     public void setRole(String role) {
-          this.role = role;
+     public void setpNum(String pNum) { this.pNum = pNum; }
+
+     public void setUserSex(String userSex) {
+          this.userSex = userSex;
+     }
+
+     public void setUserBirth(String userBirth) {
+          this.userBirth = userBirth;
      }
 
      @Override
@@ -54,6 +78,9 @@ public class User {
                   ", userName='" + userName + '\'' +
                   ", pwd='" + pwd + '\'' +
                   ", role='" + role + '\'' +
+                  ", pNum='" + pNum + '\'' +
+                  ", userSex='" + userSex + '\'' +
+                  ", userBirth='" + userBirth + '\'' +
                   "}\n";
      }
 }
