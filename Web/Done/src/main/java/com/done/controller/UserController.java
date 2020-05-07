@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.List;
 
 
-@RequestMapping("/index")
+@RequestMapping("User")
 @Controller
 public class UserController {
 
