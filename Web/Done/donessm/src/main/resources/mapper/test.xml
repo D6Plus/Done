@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="wk.dao.GroupDAO">
+    <select id="queryByID" resultType="wk.entity.Group">
+		select * from `group` where groupID = #{groupID}
+    </select>
+
+    <select id="queryAll" resultType="wk.entity.Group">
+		select * from `group`
+	</select>
+
+    <select id="queryByName" resultType="wk.entity.Group">
+        select * from `group` where groupName = #{groupName}
+    </select>
+    <select id="getLastID" resultType="java.lang.String">
+        select groupID from `group` order by groupID desc limit 1
+    </select>
+
+
+
+    <!-- 创建小组 -->
+    <insert id="insertGroup" parameterType="wk.entity.Group" useGeneratedKeys="true" keyProperty="groupID" >
+        INSERT INTO `group`(groupName,groupDescribe) VALUES(#{groupName},#{groupDescribe})
+    </insert>
+    <!--新增userrole  0是群主  1是管理员  2是成员-->
+    <insert id="insertUserrole" >
+        INSERT INTO  `userrole`(userID,groupID,role) VALUES(#{User.userID},#{Group.groupID},0)
+    </insert>
+
+    <!--加入小组      0是群主  1是管理员  2是成员-->
+    <insert id="joinGroup">
+        INSERT INTO  `userrole`(userID,groupID,role) VALUES (#{User.userID},#{Group.groupID},2)
+    </insert>
+
+    <!--退出小组-->
+    <delete id="quitGroup" >
+        delete from `userrole` where userID=#{User.userID} and groupID=#{Group.groupID}
+    </delete>
+
+    <!--查询所有小组-->
+    <select id="queryAllGroup" resultType="wk.entity.Group">
+        select * from `group`
+    </select>
+
+    <!--通过名字查询小组-->
+    <select id="queryGroupByName" resultType="wk.entity.Group">
+        select * from `group` where groupName=#{groupName}
+    </select>
+
+    <!--通过id查询小组-->
+    <select id="queryGroupByID" resultType="wk.entity.Group">
+        select * from `group` where groupID = #{groupID}
+    </select>
+
+</mapper>
+
