@@ -49,6 +49,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="c5bd8989-cff1-434a-9bd0-eeb8b8fd8c2f" name="默认的" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/Done1.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
@@ -63,6 +64,9 @@
       <change beforePath="$PROJECT_DIR$/Web/Done/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/Done/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="c5bd8989-cff1-434a-9bd0-eeb8b8fd8c2f" name="默认的" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,12 +75,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectId" id="1coPlOrG48qK9arRxBYvgHG166Q" />
+=======
+  <component name="ProjectId" id="1cr1CV3X15IlDkbuOfMRhATHVPm" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< Updated upstream
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -212,18 +221,33 @@
         <item itemvalue="JUnit.JsonTest" />
       </list>
     </recent_temporary>
+=======
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+>>>>>>> Stashed changes
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< Updated upstream
       <changelist id="28eb8491-edfd-42e1-9114-d2229faa7349" name="默认的" comment="" />
       <created>1588599502635</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588599502635</updated>
       <workItem from="1588599511082" duration="3624000" />
+=======
+      <changelist id="c5bd8989-cff1-434a-9bd0-eeb8b8fd8c2f" name="默认的" comment="" />
+      <created>1591271774753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591271774753</updated>
+      <workItem from="1591271795681" duration="121000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -231,6 +255,7 @@
     <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+<<<<<<< Updated upstream
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -296,4 +321,8 @@
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1588600713435" />
   </component>
+=======
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+>>>>>>> Stashed changes
 </project>
