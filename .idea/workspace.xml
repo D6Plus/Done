@@ -49,45 +49,29 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28eb8491-edfd-42e1-9114-d2229faa7349" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Done/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Done/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Done.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Done.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml" beforeDir="false" />
+    <list default="true" id="c5bd8989-cff1-434a-9bd0-eeb8b8fd8c2f" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Done1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Done/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/Done/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/dao/GroupDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/dao/GroupDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/main/java/com/done/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/src/main/resources/mapper/UserDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/main/resources/mapper/UserDAO.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/src/test/java/DAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/test/java/DAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/src/test/java/ServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/src/test/java/ServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/target/classes/com/done/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/target/classes/com/done/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/target/classes/com/done/dao/GroupDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/target/classes/com/done/dao/GroupDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/target/classes/com/done/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/target/classes/com/done/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/target/classes/com/done/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/target/classes/com/done/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/target/classes/com/done/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/target/classes/com/done/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/target/classes/mapper/UserDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/target/classes/mapper/UserDAO.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/target/test-classes/DAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/target/test-classes/DAOTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Done/target/test-classes/ServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Done/target/test-classes/ServiceImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1coPlOrG48qK9arRxBYvgHG166Q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -256,6 +240,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="179" y="259" key="#SQL_Dialects" timestamp="1588600182370">
