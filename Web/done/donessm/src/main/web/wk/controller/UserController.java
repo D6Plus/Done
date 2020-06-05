@@ -9,6 +9,15 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.ui.Model;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import java.util.List;
 
 
@@ -44,8 +53,9 @@ public class UserController {
      * @param UserName
      * @return
      */
-    @RequestMapping(value = "queryUserByName",produces = "application/json;charset=utf-8")
-    public List<User> queryUserByName(@RequestBody String UserName){
+    @CrossOrigin(origins = "*",maxAge = 3600)
+    @RequestMapping(value = "queryUserByName",produces = "application/json;charset=utf-8",method = RequestMethod.GET)
+    public JSONArray queryUserByName(@RequestBody String UserName){
         List<User> UserList= userService.getUserByName(UserName);
         JSONArray jsonOutput=JSONArray.fromObject(UserList);
         return jsonOutput;
@@ -66,7 +76,7 @@ public class UserController {
     /*
      * 前台登录
      */
-    @RequestMapping(value = "login1",produces = "application/json;charset=utf-8", method = RequestMethod.POST)
+   /*@RequestMapping(value = "login1",produces = "application/json;charset=utf-8", method = RequestMethod.POST)
     public boolean login1 (@RequestBody User user){
         User user1 = userService.login(user.getUserID(),user.getPwd());
         if(user!=null) {
@@ -75,8 +85,20 @@ public class UserController {
         else{
             return false;
         }
-    }
+    }*/
 
+
+    @RequestMapping(value = "login1", method = RequestMethod.POST)
+    public void login1 (HttpSession session, @RequestParam String UserId, @RequestParam String pwd, HttpServletResponse response)
+    throws IOException {
+        User user1 = userService.login(UserId, pwd);
+        if (user1 != null) {
+            session.setAttribute("user", user1.getUserID());
+            response.sendRedirect("/home.jsp");
+        } else {
+            response.sendRedirect("/index.jsp");
+        }
+    }
     /*
      * 后台登录
      */

@@ -14,7 +14,14 @@
 <body>
 <h2>Hello World!</h2>
 
-<h2><a href="/Group/queryAllGroup">点---abc---击</a></h2>
+<form action="/User/login1" method="post">
+    <input type="text" name="UserId">
+    <input type="password" name="pwd">
+    <input type="submit">
+</form>
+<h2><a href="/User/queryAllUser">点---abc---击</a></h2>
 
+<% String name = (String) request.getSession().getAttribute("user"); %>
+this is <%=name%>
 </body>
 </html>

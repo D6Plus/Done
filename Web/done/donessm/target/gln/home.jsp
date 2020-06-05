@@ -13,6 +13,7 @@
 
 <body>
 <h2>第二个页面</h2>
-
-
+<% String name = (String) request.getSession().getAttribute("user"); %>
+    this is <%=name%>
+<a href="aaa.jsp">aaa</a>
 </body>
