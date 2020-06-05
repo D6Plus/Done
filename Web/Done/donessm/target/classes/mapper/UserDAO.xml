@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.done.dao.UserDAO">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="wk.dao.UserDAO">
     <insert id="createNewUser">
         insert into `user` (userID, userName, pwd, role) value (#{newUserID}, #{userName}, #{pwd}, #{role})
     </insert>
 
-    <select id="login" resultType="com.done.entity.User">
+    <select id="login" resultType="wk.entity.User">
         select userName,userID,role
         from `user`
         where userID = #{userID} and pwd = #{pwd}
@@ -25,7 +23,7 @@
         where userID = #{userID}
     </update>
 
-    <select id="getMassage" resultType="com.done.entity.User">
+    <select id="getMassage" resultType="wk.entity.User">
         select userName,pNum,userSex,userBirth from `user` where userID = #{userID}
     </select>
 
@@ -42,15 +40,15 @@
     </update>
 
 
-    <select id="queryByID" resultType="com.done.entity.User">
-		select * from `user` where userID = #{userID}
+    <select id="queryByID" resultType="wk.entity.User">
+        select * from `user` where userID = #{userID}
     </select>
 
-    <select id="queryAll" resultType="com.done.entity.User">
-		select * from `user`
-	</select>
+    <select id="queryAll" resultType="wk.entity.User">
+        select * from `user`
+    </select>
 
-    <select id="queryByName" resultType="com.done.entity.User">
+    <select id="queryByName" resultType="wk.entity.User">
         select * from `user` where userName = #{userName}
     </select>
 
