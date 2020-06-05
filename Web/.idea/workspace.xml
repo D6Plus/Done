@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f8eaf1d1-f00c-4791-ab25-9a87354dae0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ssm_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ssm_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_68.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_api_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_collectionschema_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_core_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_runtime_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/artifacts/donessm_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/artifacts/donessm_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__com_alibaba_fastjson_1_2_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_aspectj_aspectjrt_1_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_aop_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_beans_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_context_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_core_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_expression_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_jms_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_messaging_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_test_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_tx_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_web_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/classes/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/classes/mapper/PlanDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/classes/mapper/UserDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/classes/mapper/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/aspectjrt-1.5.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/aspectjweaver-1.7.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/c3p0-0.9.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/commons-pool-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/fastjson-1.2.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/jackson-annotations-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/jackson-core-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/jackson-core-asl-1.9.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/jackson-databind-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/jackson-mapper-asl-1.9.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/mybatis-3.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/mybatis-spring-1.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/protobuf-java-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/slf4j-api-1.7.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/slf4j-log4j12-1.7.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-aop-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-beans-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-context-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-context-support-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-core-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-expression-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-jdbc-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-jms-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-messaging-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-test-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-tx-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-web-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/lib/spring-webmvc-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/out/artifacts/donessm_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/resources/mapper/PlanDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/resources/mapper/UserDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/resources/mapper/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/resources/spring-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/controller/GroupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/controller/PlanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/dao/GroupDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/dao/PlanDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/dto/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/entity/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/entity/Plan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/service/GroupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/serviceImpl/GroupServicelmpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/web/wk/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/webapp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/mapper/PlanDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/mapper/UserDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/mapper/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/spring-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/controller/GroupController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/controller/PlanController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/dao/GroupDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/dao/PlanDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/dao/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/dto/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/entity/Group.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/entity/Plan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/service/GroupService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/serviceImpl/GroupServicelmpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/classes/wk/serviceImpl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/META-INF/gln.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/mapper/PlanDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/mapper/UserDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/mapper/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/controller/GroupController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/controller/PlanController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/dao/GroupDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/dao/PlanDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/dao/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/dto/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/entity/Group.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/entity/Plan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/service/GroupService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/serviceImpl/GroupServicelmpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/classes/wk/serviceImpl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/aspectjrt-1.5.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/aspectjweaver-1.7.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/c3p0-0.9.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/commons-beanutils-1.9.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/commons-lang-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/commons-pool-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/fastjson-1.2.28.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/jackson-annotations-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/jackson-core-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/jackson-core-asl-1.9.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/jackson-databind-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/jackson-mapper-asl-1.9.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/json-lib-2.2.3-jdk15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/mybatis-3.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/mybatis-spring-1.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/protobuf-java-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/slf4j-api-1.7.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/slf4j-log4j12-1.7.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-aop-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-beans-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-context-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-context-support-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-core-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-expression-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-jdbc-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-jms-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-messaging-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-test-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-tx-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-web-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/lib/spring-webmvc-4.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Done/donessm/target/gln/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Done/donessm/.idea/donessm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Done/donessm/.idea/donessm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/.idea/artifacts/donessm_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/.idea/artifacts/donessm_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/.idea/artifacts/donessm_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/.idea/artifacts/donessm_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/out/artifacts/donessm_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/out/artifacts/donessm_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/out/artifacts/donessm_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/src/main/web/wk/controller/PlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/src/main/web/wk/controller/PlanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/src/main/web/wk/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/src/main/web/wk/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/src/main/web/wk/serviceImpl/GroupServicelmpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/src/main/web/wk/serviceImpl/GroupServicelmpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/src/main/web/wk/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/src/main/web/wk/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/target/classes/mapper/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/target/classes/mapper/test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/target/classes/wk/controller/GroupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/target/classes/wk/controller/GroupController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/target/classes/wk/service/GroupService.class" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/target/classes/wk/service/GroupService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/target/gln/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/target/gln/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done/donessm/target/gln/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/done/donessm/target/gln/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="XTG-L &lt;xtg-l@foxmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\IdeaProject\Done\Web\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bfiGlQUAUAZ239y5i9IUalfUTP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mycode" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8eaf1d1-f00c-4791-ab25-9a87354dae0d" name="Default Changelist" comment="" />
+      <created>1589029457183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589029457183</updated>
+      <workItem from="1589029471026" duration="1323000" />
+      <workItem from="1589030847587" duration="43000" />
+      <workItem from="1589033403563" duration="478000" />
+      <workItem from="1589043474088" duration="773000" />
+      <workItem from="1589044635513" duration="163000" />
+      <workItem from="1589163701271" duration="33000" />
+    </task>
+    <task id="LOCAL-00001" summary="。。。">
+      <created>1589033655539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589033655539</updated>
+    </task>
+    <task id="LOCAL-00002" summary="。。。">
+      <created>1589043494311</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589043494311</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="。。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="。。。" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="476" y="234" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1589029993361">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="476" y="234" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.689@0.0.1280.689" timestamp="1589029993361" />
+    <state x="105" y="0" key="CommitChangelistDialog2" timestamp="1589043492085">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="105" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589043492085" />
+    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1589163737276">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589163737276" />
+    <state x="172" y="0" key="SettingsEditor" timestamp="1589033783884">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="172" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1589033783884" />
+    <state x="286" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1589163721831">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="286" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1589163721831" />
+    <state x="297" y="153" width="672" height="677" key="run.anything.popup" timestamp="1589033550247">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="297" y="153" width="672" height="677" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1589033550247" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1589033554454">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1589033554454" />
+  </component>
+</project>
