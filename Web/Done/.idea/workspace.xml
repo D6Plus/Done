@@ -13,6 +13,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/done/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PlanDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +108,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1b6XMYaX6aj9gNgjsxa9MNjb6DD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -126,6 +131,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../donefront/demo" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -354,6 +361,9 @@
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1588071941785</updated>
+      <workItem from="1587957660777" duration="3919000" />
+      <workItem from="1590913120362" duration="13000" />
+      <workItem from="1590913188038" duration="907000" />
     </task>
     <task id="LOCAL-00002" summary="更新了jdbc.properties使其能够对应mysql8数据库并进行测试">
       <created>1588131942439</created>
@@ -489,6 +499,12 @@
     <state x="237" y="121" key="EnvironmentVariablesDialog/0.0.1280.720@0.0.1280.720" timestamp="1588070986492" />
     <state x="632" y="206" key="FileChooserDialogImpl" timestamp="1588569065035">
       <screen x="0" y="40" width="1920" height="1040" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1590914094768">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1590914094768" />
+    <state width="1493" height="187" key="GridCell.Tab.0.bottom" timestamp="1587957393412">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1588476353500" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1588131891213" />
@@ -660,6 +676,10 @@
     <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1588383206156" />
     <state x="455" y="16" width="1008" height="1063" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588525656574" />
     <state x="455" y="55" width="1008" height="1024" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1588570253320" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1587972510788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587972510788" />
     <state x="449" y="95" key="spring file set editor" timestamp="1587954473265">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
