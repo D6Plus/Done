@@ -15,8 +15,13 @@
 <h2>Hello World!</h2>
 
 <form action="/User/login1" method="post">
-    <input type="text" name="UserId">
+    <input type="text" name="UserID">
     <input type="password" name="pwd">
+    <input type="submit">
+</form>
+
+<form action="/User/queryUserByID">
+    <input type="text" name="UserID">
     <input type="submit">
 </form>
 <h2><a href="/User/queryAllUser">点---abc---击</a></h2>

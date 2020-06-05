@@ -1,6 +1,7 @@
 package wk.controller;
 
 import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Qualifier;
 import wk.entity.User;
 import wk.service.UserService;
@@ -10,11 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.springframework.ui.Model;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
@@ -39,7 +35,6 @@ public class UserController {
      * 查询所有用户
      * @return
      */
-
     @CrossOrigin(origins = "*",maxAge = 3600)
     @RequestMapping(value = "queryAllUser",produces = "application/json;charset=utf-8")
     public JSONArray queryAllUser(){
@@ -50,13 +45,13 @@ public class UserController {
 
     /**
      * 通过名字查询用户
-     * @param UserName
+     * @param userName
      * @return
      */
     @CrossOrigin(origins = "*",maxAge = 3600)
     @RequestMapping(value = "queryUserByName",produces = "application/json;charset=utf-8",method = RequestMethod.GET)
-    public JSONArray queryUserByName(@RequestBody String UserName){
-        List<User> UserList= userService.getUserByName(UserName);
+    public JSONArray queryUserByName(@RequestBody String userName){
+        List<User> UserList= userService.getUserByName(userName);
         JSONArray jsonOutput=JSONArray.fromObject(UserList);
         return jsonOutput;
     }
@@ -64,22 +59,22 @@ public class UserController {
     /**
      * 通过ID查询用户
      * @param UserID
-     * @return
      */
     @ResponseBody
     @RequestMapping(value = "queryUserByID",produces = "application/json;charset=utf-8", method = RequestMethod.GET)
-    public User queryUserByID(@RequestParam String UserID){
+    public JSONObject queryUserByID(@RequestBody String UserID){
         User user= userService.getUserByID(UserID);
-        return user;
+        JSONObject jsonOutput=JSONObject.fromObject(user);
+        return jsonOutput;
     }
 
-    /*
-     * 前台登录
-     */
-   /*@RequestMapping(value = "login1",produces = "application/json;charset=utf-8", method = RequestMethod.POST)
-    public boolean login1 (@RequestBody User user){
-        User user1 = userService.login(user.getUserID(),user.getPwd());
-        if(user!=null) {
+
+
+/*
+    @RequestMapping(value = "login1", method = RequestMethod.POST)
+    public boolean login1 ( String UserID, String pwd){
+        User user1 = userService.login(UserID,pwd);
+        if(user1!=null) {
             return true;
         }
         else{
@@ -88,60 +83,109 @@ public class UserController {
     }*/
 
 
+    /**
+     * 注册
+     * @param userID
+     * @param userName
+     * @param pwd
+     */
+    @ResponseBody
+    @RequestMapping(value = "sighup", method = RequestMethod.POST)
+    public void login1 (@RequestBody  String userID,@RequestBody  String userName,@RequestBody  String pwd,HttpServletResponse response)
+            throws IOException{
+        if (userService.createNewUser(userID,userName,pwd)) {
+            response.sendRedirect("/index.jsp");
+        } else {
+            response.sendRedirect("/home.jsp");
+        }
+    }
+    /**
+     * 前台登录
+     * @param userID
+     * @param pwd
+     */
+    @ResponseBody
     @RequestMapping(value = "login1", method = RequestMethod.POST)
-    public void login1 (HttpSession session, @RequestParam String UserId, @RequestParam String pwd, HttpServletResponse response)
+    public void login1 (HttpSession session, @RequestBody  String userID,@RequestBody  String pwd, HttpServletResponse response)
     throws IOException {
-        User user1 = userService.login(UserId, pwd);
+        User user1 = userService.login(userID, pwd);
         if (user1 != null) {
-            session.setAttribute("user", user1.getUserID());
+            session.setAttribute("userID", user1.getUserID());
+            session.setAttribute("userName", user1.getUserName());
             response.sendRedirect("/home.jsp");
         } else {
             response.sendRedirect("/index.jsp");
         }
     }
-    /*
+    /**
      * 后台登录
+     * @param userID
+     * @param pwd
      */
-    @RequestMapping(value = "login2",produces = "application/json;charset=utf-8", method = RequestMethod.POST)
-    public boolean login2 (@RequestBody User user){
-        User user1 = userService.login2(user.getUserID(),user.getPwd());
-        if(user!=null) {
-            return true;
-        }
-        else{
-            return false;
+    @ResponseBody
+    @RequestMapping(value = "login2", method = RequestMethod.POST)
+    public void login2 (HttpSession session, @RequestBody  String userID,@RequestBody  String pwd, HttpServletResponse response)
+            throws IOException {
+        User user1 = userService.login2(userID, pwd);
+        if (user1 != null) {
+            session.setAttribute("userID", user1.getUserID());
+            session.setAttribute("userName", user1.getUserName());
+            response.sendRedirect("/home.jsp");
+        } else {
+            response.sendRedirect("/index.jsp");
         }
     }
 
-    /*
+    /**
+     * 退出登录
+     */
+    @ResponseBody
+    @RequestMapping(value = "login2", method = RequestMethod.POST)
+    public void login2 (HttpSession session, HttpServletResponse response)
+            throws IOException {
+            session.setAttribute("userID", null);
+            session.setAttribute("userName", null);
+            response.sendRedirect("/home.jsp");
+    }
+
+    /**
      * 修改密码
+     * @param userID
+     * @param pwd
      */
+    @ResponseBody
     @RequestMapping(value = "changePwd", method = RequestMethod.POST)
-    public boolean changePwd(@RequestBody User user){
-        if(userService.changePwd2(user.getUserID(),user.getPwd())) {
+    public boolean changePwd( @RequestBody  String userID,@RequestBody  String pwd){
+        if(userService.changePwd2(userID,pwd)) {
             return true;
         }
         else{
             return false;
         }
     }
-
-    /*
+    /**
      * 修改资料
+     * @param userID
+     * @param userName
+     * @param pNum
+     * @param userSex
+     * @param userBirth
      */
     @RequestMapping(value = "changeMassage", method = RequestMethod.POST)
-    public boolean updateMassage( @RequestBody User user){
-        return userService.updateMassage(user.getUserID(), user.getUserName(), user.getpNum(), user.getUserSex(), user.getUserBirth());
+    public boolean updateMassage( @RequestBody String userID,@RequestBody String userName,@RequestBody String pNum,
+                                  @RequestBody String userSex,@RequestBody String userBirth){
+        return userService.updateMassage(userID, userName, pNum, userSex, userBirth);
     }
 
     /**
      * 通过ID查询用户资料
-     * @param UserID
+     * @param userID
      * @return
      */
+    @ResponseBody
     @RequestMapping(value = "getMassage",produces = "application/json;charset=utf-8")
-    public User getMassageByID(@RequestBody String UserID){
-        return userService.getMassage(UserID);
+    public User getMassageByID(@RequestBody String userID){
+        return userService.getMassage(userID);
     }
 
 
