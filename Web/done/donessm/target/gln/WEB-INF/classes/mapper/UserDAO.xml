@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="wk.dao.UserDAO">
     <insert id="createNewUser">
-        insert into `user` (userID, userName, pwd, role) value (#{newUserID}, #{userName}, #{pwd}, #{role})
+        insert into `user` (userID, userName, pwd, role) value (#{newUserID}, #{userName}, #{pwd}, #{role});
     </insert>
 
     <select id="login" resultType="wk.entity.User">
         select userName,userID,role
         from `user`
-        where userID = #{userID} and pwd = #{pwd}
+        where userID = #{userID} and pwd = #{pwd};
     </select>
 
     <update id="changePwd">
@@ -56,4 +56,19 @@
         select userID from `user` order by userID desc limit 1
     </select>
 
+    <insert id="createNewInfo">
+        insert into `info` (userID, infoName, infoSelf) value (#{userID}, #{infoName}, #{infoSelf} )
+    </insert>
+
+    <select id="countNewInfo"  resultType="Integer">
+        select count(*)
+        from  info
+        where userID = #{userID} and status = #{status};
+    </select>
+
+    <select id="queryAllInfo"  resultType="wk.entity.Info">
+        select *
+        from  info
+        where userID = #{userID} ;
+    </select>
 </mapper>

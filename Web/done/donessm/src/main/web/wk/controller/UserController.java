@@ -3,6 +3,7 @@ package wk.controller;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Qualifier;
+import wk.entity.Info;
 import wk.entity.User;
 import wk.service.UserService;
 import org.slf4j.Logger;
@@ -75,8 +76,8 @@ public class UserController {
 
 
 
-/*
-    @RequestMapping(value = "login1", method = RequestMethod.POST)
+
+   /* @RequestMapping(value = "login1", method = RequestMethod.GET)
     public void login3 ( HttpSession session,   String userID,  String pwd, HttpServletResponse response)
             throws IOException {
         User user3 = userService.login(userID,pwd);
@@ -102,6 +103,9 @@ public class UserController {
         String userName = (String) map.get("userName");
         String pwd = (String) map.get("pwd");
         if (userService.createNewUser(userID,userName,pwd)) {
+            String infoName = "欢迎！";
+            String infoSelf = "欢迎您使用Done！";
+            userService.createNewInfo(userID,infoName,infoSelf);
             response.sendRedirect("/index.jsp");
         } else {
             response.sendRedirect("/home.jsp");
@@ -204,6 +208,32 @@ public class UserController {
             return jsonOutput;
     }
 
+    /**
+     * 通过ID查询未读通知数量
+     * @param map
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "countNewInfo",produces = "application/json;charset=utf-8",method = RequestMethod.GET)
+    public int countNewInfo(@RequestBody Map<String,Object> map) {
+        String userID = (String) map.get("userID");
 
+        return userService.countNewInfo(userID);
+    }
 
+    /**
+     * 通过ID查询所有的通知
+     * @param map
+     * @return
+     */
+    @CrossOrigin(origins = "*",maxAge = 3600)
+    @ResponseBody
+    @RequestMapping(value = "queryAllInfo",produces = "application/json;charset=utf-8",method = RequestMethod.GET)
+    public JSONArray  queryAllInfo(@RequestBody Map<String,Object> map){
+        String userID = (String) map.get("userID");
+        List<Info> UserList= userService.queryAllInfo(userID );
+        JSONArray jsonOutput=JSONArray.fromObject(UserList);
+        return jsonOutput;
+
+    }
 }
