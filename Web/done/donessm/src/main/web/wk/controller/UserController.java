@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 import java.util.List;
 
@@ -45,12 +46,13 @@ public class UserController {
 
     /**
      * 通过名字查询用户
-     * @param userName
+     * @param map
      * @return
      */
     @CrossOrigin(origins = "*",maxAge = 3600)
     @RequestMapping(value = "queryUserByName",produces = "application/json;charset=utf-8",method = RequestMethod.GET)
-    public JSONArray queryUserByName(@RequestBody String userName){
+    public JSONArray queryUserByName(@RequestBody Map<String,Object> map){
+        String userName = (String) map.get("userName");
         List<User> UserList= userService.getUserByName(userName);
         JSONArray jsonOutput=JSONArray.fromObject(UserList);
         return jsonOutput;
@@ -58,12 +60,15 @@ public class UserController {
 
     /**
      * 通过ID查询用户
-     * @param UserID
+     * @param map
+     * @return
      */
+    @CrossOrigin(origins = "*",maxAge = 3600)
     @ResponseBody
     @RequestMapping(value = "queryUserByID",produces = "application/json;charset=utf-8", method = RequestMethod.GET)
-    public JSONObject queryUserByID(@RequestBody String UserID){
-        User user= userService.getUserByID(UserID);
+    public JSONObject queryUserByID(@RequestBody Map<String,Object> map){
+        String userID = (String) map.get("userID");
+        User user= userService.getUserByID(userID);
         JSONObject jsonOutput=JSONObject.fromObject(user);
         return jsonOutput;
     }
@@ -72,42 +77,47 @@ public class UserController {
 
 /*
     @RequestMapping(value = "login1", method = RequestMethod.POST)
-    public boolean login1 ( String UserID, String pwd){
-        User user1 = userService.login(UserID,pwd);
-        if(user1!=null) {
-            return true;
+    public void login3 ( HttpSession session,   String userID,  String pwd, HttpServletResponse response)
+            throws IOException {
+        User user3 = userService.login(userID,pwd);
+        if (user3 != null) {
+            session.setAttribute("userID", user3.getUserID());
+            session.setAttribute("userName", user3.getUserName());
+            response.sendRedirect("/home.jsp");
+        } else {
+            response.sendRedirect("/index.jsp");
         }
-        else{
-            return false;
-        }
-    }*/
-
+    }
+*/
 
     /**
      * 注册
-     * @param userID
-     * @param userName
-     * @param pwd
+     * @param map
      */
     @ResponseBody
-    @RequestMapping(value = "sighup", method = RequestMethod.POST)
-    public void login1 (@RequestBody  String userID,@RequestBody  String userName,@RequestBody  String pwd,HttpServletResponse response)
+    @RequestMapping(value = "sighup",produces = "application/json;charset=utf-8" ,method = RequestMethod.POST)
+    public void sighup (@RequestBody Map<String,Object> map,HttpServletResponse response)
             throws IOException{
+        String userID = (String) map.get("userID");
+        String userName = (String) map.get("userName");
+        String pwd = (String) map.get("pwd");
         if (userService.createNewUser(userID,userName,pwd)) {
             response.sendRedirect("/index.jsp");
         } else {
             response.sendRedirect("/home.jsp");
         }
     }
+
     /**
      * 前台登录
-     * @param userID
-     * @param pwd
+     * @param map
      */
     @ResponseBody
-    @RequestMapping(value = "login1", method = RequestMethod.POST)
-    public void login1 (HttpSession session, @RequestBody  String userID,@RequestBody  String pwd, HttpServletResponse response)
+    @RequestMapping(value = "login1",produces = "application/json;charset=utf-8", method = RequestMethod.POST)
+    public void login1 (HttpSession session,  @RequestBody Map<String,Object> map, HttpServletResponse response)
     throws IOException {
+        String userID = (String) map.get("userID");
+        String pwd = (String) map.get("pwd");
         User user1 = userService.login(userID, pwd);
         if (user1 != null) {
             session.setAttribute("userID", user1.getUserID());
@@ -119,13 +129,14 @@ public class UserController {
     }
     /**
      * 后台登录
-     * @param userID
-     * @param pwd
+     * @param map
      */
     @ResponseBody
-    @RequestMapping(value = "login2", method = RequestMethod.POST)
-    public void login2 (HttpSession session, @RequestBody  String userID,@RequestBody  String pwd, HttpServletResponse response)
+    @RequestMapping(value = "login2",produces = "application/json;charset=utf-8", method = RequestMethod.POST)
+    public void login2 (HttpSession session, @RequestBody Map<String,Object> map, HttpServletResponse response)
             throws IOException {
+        String userID = (String) map.get("userID");
+        String pwd = (String) map.get("pwd");
         User user1 = userService.login2(userID, pwd);
         if (user1 != null) {
             session.setAttribute("userID", user1.getUserID());
@@ -140,7 +151,7 @@ public class UserController {
      * 退出登录
      */
     @ResponseBody
-    @RequestMapping(value = "login2", method = RequestMethod.POST)
+    @RequestMapping(value = "logout", method = RequestMethod.POST)
     public void login2 (HttpSession session, HttpServletResponse response)
             throws IOException {
             session.setAttribute("userID", null);
@@ -150,12 +161,13 @@ public class UserController {
 
     /**
      * 修改密码
-     * @param userID
-     * @param pwd
+     * @param map
      */
     @ResponseBody
-    @RequestMapping(value = "changePwd", method = RequestMethod.POST)
-    public boolean changePwd( @RequestBody  String userID,@RequestBody  String pwd){
+    @RequestMapping(value = "changePwd",produces = "application/json;charset=utf-8", method = RequestMethod.POST)
+    public boolean changePwd( @RequestBody Map<String,Object> map){
+        String userID = (String) map.get("userID");
+        String pwd = (String) map.get("pwd");
         if(userService.changePwd2(userID,pwd)) {
             return true;
         }
@@ -165,28 +177,33 @@ public class UserController {
     }
     /**
      * 修改资料
-     * @param userID
-     * @param userName
-     * @param pNum
-     * @param userSex
-     * @param userBirth
+     * @param map
      */
-    @RequestMapping(value = "changeMassage", method = RequestMethod.POST)
-    public boolean updateMassage( @RequestBody String userID,@RequestBody String userName,@RequestBody String pNum,
-                                  @RequestBody String userSex,@RequestBody String userBirth){
+    @ResponseBody
+    @RequestMapping(value = "changeMassage",produces = "application/json;charset=utf-8", method = RequestMethod.POST)
+    public boolean updateMassage( @RequestBody Map<String,Object> map){
+        String userID = (String) map.get("userID");
+        String userName = (String) map.get("userName");
+        String pNum = (String) map.get("pNum");
+        String userSex = (String) map.get("userSex");
+        String userBirth = (String) map.get("userBirth");
         return userService.updateMassage(userID, userName, pNum, userSex, userBirth);
     }
 
     /**
      * 通过ID查询用户资料
-     * @param userID
+     * @param map
      * @return
      */
     @ResponseBody
-    @RequestMapping(value = "getMassage",produces = "application/json;charset=utf-8")
-    public User getMassageByID(@RequestBody String userID){
-        return userService.getMassage(userID);
+    @RequestMapping(value = "getMassage",produces = "application/json;charset=utf-8",method = RequestMethod.GET)
+    public JSONObject getMassageByID(@RequestBody Map<String,Object> map) {
+        String userID = (String) map.get("userID");
+        User user = userService.getMassage(userID);
+            JSONObject jsonOutput=JSONObject.fromObject(user);
+            return jsonOutput;
     }
+
 
 
 }

@@ -24,7 +24,7 @@
     </update>
 
     <select id="getMassage" resultType="wk.entity.User">
-        select userName,pNum,userSex,userBirth from `user` where userID = #{userID}
+        select userID,userName,pNum,userSex,userBirth from `user` where userID = #{userID}
     </select>
 
     <update id="updateMassage">

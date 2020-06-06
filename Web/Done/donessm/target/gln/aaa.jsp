@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<% String name = (String) request.getSession().getAttribute("user"); %>
+<% String name = (String) request.getSession().getAttribute("userID"); %>
 this is <%=name%>
 </body>
 </html>

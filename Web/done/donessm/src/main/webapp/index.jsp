@@ -15,7 +15,7 @@
 <h2>Hello World!</h2>
 
 <form action="/User/login1" method="post">
-    <input type="text" name="UserID">
+    <input type="text" name="userID">
     <input type="password" name="pwd">
     <input type="submit">
 </form>
@@ -29,4 +29,4 @@
 <% String name = (String) request.getSession().getAttribute("user"); %>
 this is <%=name%>
 </body>
-</html>
+</html>ID
