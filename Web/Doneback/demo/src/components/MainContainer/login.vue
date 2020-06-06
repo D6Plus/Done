@@ -44,7 +44,7 @@
     </div>
 </template>
 <script>
-    import MainContainer from "./MainContainer/MainContainer";
+    import MainContainer from "./MainContainer";
     export default {
         data() {
             return{
