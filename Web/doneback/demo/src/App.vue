@@ -28,12 +28,14 @@
 import TopNavigation from './components/TopNavigation/TopNavigation'
 import SideNavigation from './components/SideNavigation/SideNavigation'
 import MainContainer from './components/MainContainer/MainContainer'
+// import login from './components/MainContainer/login'
 
 export default {
   name: 'App',
   components: {
     // eslint-disable-next-line vue/no-unused-components
     // HelloWorld,
+    // login,
     TopNavigation,
     SideNavigation,
     MainContainer

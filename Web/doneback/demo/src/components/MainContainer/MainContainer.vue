@@ -11,7 +11,7 @@
     import PersonalPlanList from '../../components/MainContainer/PlanList/PersonalPlanList'
     import GroupPlanList from '../../components/MainContainer/PlanList/GroupPlanList'
     import GroupManage from '../../components/MainContainer/GroupManage/GroupManage'
-    import login from "../../components/MainContainer/../login"
+    import login from "./login"
     export default {
         name: "MainContainer",
         components:{
@@ -24,7 +24,7 @@
         },
         data(){
             return{
-                content:'SystemInformation'
+                content:'login'
             }
         },
         mounted() {
