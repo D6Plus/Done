@@ -13,7 +13,7 @@ public interface GroupService {
     int insertuserrole(Group group,String userID);
 
     //加入小组
-    void joinGroup(Group group,User user);
+    int joinGroup(String userID,String groupID,String role);
 
     //退出小组
     boolean quitGroup(User user, Group group);
@@ -42,4 +42,10 @@ public interface GroupService {
 
     //移除小组成员
     int kickMember(String userID,String groupID);
+
+    //邀请成员
+    int inviteMember(String userID,String groupID);
+
+    //修改成员信息
+    int updateMemberrole(String userID,String groupID,String userrole);
 }

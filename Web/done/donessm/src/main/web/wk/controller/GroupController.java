@@ -43,17 +43,13 @@ public class GroupController {
 
     /**
      * 加入小组控制器
-     * @param map
      */
     @RequestMapping(value="/joinGroup",produces = "application/json;charset=utf-8")
     @ResponseBody
-    public void joinGroup(@RequestBody Map<String,Object> map){
-        Group group=(Group)map.get("Group");
-        User user=(User)map.get("User");
-        System.out.println("接受来自前台JSON对象转化为对象"+group);
-        System.out.println("接受来自前台JSON的转化对象"+user);
-        groupService.joinGroup(group,user);
-
+    public int joinGroup(@RequestParam String userID,@RequestParam String groupID,@RequestParam String role){
+        int success=0;
+        success=groupService.joinGroup(userID,groupID,role);
+        return success;
     }
 
     /**
@@ -177,6 +173,12 @@ public class GroupController {
         return success;
     }
 
+    /**
+     * 踢出成员
+     * @param userID
+     * @param groupID
+     * @return
+     */
     @RequestMapping(value="kickMember",produces ="application/json;charset=utf-8" )
     @ResponseBody
     public int kickMember(@RequestParam String userID,@RequestParam String groupID){
@@ -186,6 +188,35 @@ public class GroupController {
             success=0;
         else
             success=groupService.kickMember(userID,groupID);
+        return success;
+    }
+
+    /**
+     * 邀请成员
+     * @param userID
+     * @param groupID
+     * @return
+     */
+    @RequestMapping(value = "inviteMember",produces ="application/json;charset=utf-8" )
+    @ResponseBody
+    public int inviteMember(@RequestParam String userID,@RequestParam String groupID){
+        int success=0;
+        success=groupService.inviteMember(userID,groupID);
+        return success;
+    }
+
+    /**
+     * 修改成员权限
+     * @param userID
+     * @param groupID
+     * @param userrole
+     * @return
+     */
+    @RequestMapping(value = "updateMemberrole",produces ="application/json;charset=utf-8")
+    @ResponseBody
+    public int updateMemberrole(@RequestParam String userID,@RequestParam String groupID,@RequestParam String userrole){
+        int success=0;
+        success=groupService.updateMemberrole(userID,groupID,userrole);
         return success;
     }
 }

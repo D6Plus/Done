@@ -19,7 +19,7 @@ public interface GroupDAO {
     int insertGroup(Group group);
     int insertUserrole(@Param("Group")Group group,@Param("userID")String userID);
     //加入小组
-    void joinGroup(@Param("User") User user,@Param("Group") Group group);
+    int joinGroup(@Param("userID") String userID,@Param("groupID") String groupID,@Param("role")String role);
     //退出小组
     void quitGroup(@Param("User") User user,@Param("Group") Group group);
     //查询所有小组
@@ -43,16 +43,19 @@ public interface GroupDAO {
     int updateGroupinfo(@Param("groupID")String groupID,@Param("groupName")String groupName,@Param("groupDescribe")String groupDescribe);
 
     //修改小组成员权限
-    int updateMemberrole(@Param("userID")String userID,@Param("userrole") String userrole);
+    int updateMemberrole(@Param("userID")String userID,@Param("groupID") String groupID,@Param("userrole")String userrole);
 
     //移除小组成员
     int kickMember(@Param("userID")String userID,@Param("groupID")String groupID);
 
     //邀请组员加入小组
+    int inviteMember(@Param("userID")String userID,@Param("infoName")String infoName,@Param("infoSelf")String infoSelf);
 
-    int inviteMember(@Param("userID")String userID,@Param("groupID")String groupID);
 
-    
+
+
+
+
 
 
 

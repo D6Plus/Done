@@ -32,12 +32,13 @@ public class GroupServicelmpl implements wk.service.GroupService {
 
     /**
      * 加入小组功能
-     * @param group
-     * @param user
+
      */
     @Override
-    public void joinGroup(Group group, User user) {
-        groupDAO.joinGroup(user,group);
+    public int joinGroup(String userID, String groupID,String role) {
+        int success=0;
+        success=groupDAO.joinGroup(userID,groupID,role);
+        return success;
     }
 
     /**
@@ -154,6 +155,35 @@ public class GroupServicelmpl implements wk.service.GroupService {
     public int kickMember(String userID,String groupID) {
         int success=0;
         success=groupDAO.kickMember(userID,groupID);
+        return success;
+    }
+
+    /**
+     * 邀请成员加入
+     * @param userID
+     * @param groupID
+     * @return
+     */
+    @Override
+    public int inviteMember(String userID, String groupID) {
+        int success=0;
+        Group group=groupDAO.queryGroupByID(groupID);
+        if(group!=null) {
+            String infoName = group.getGroupName() + "小组邀请你加入";
+            String infoSelf = group.getGroupName() + "小组邀请你加入，请问是否接受";
+            success = groupDAO.inviteMember(userID, infoName, infoSelf);
+        }
+        return success;
+    }
+
+    @Override
+    public int updateMemberrole(String userID, String groupID, String userrole) {
+        int success=0;
+        userrole userrole1=groupDAO.queryUserrole(userID,groupID);
+        if(userrole1.getRole().equals("0")||userrole1.getRole().equals("1"))
+            success=0;
+        else
+        success=groupDAO.updateMemberrole(userID,groupID,userrole);
         return success;
     }
 }

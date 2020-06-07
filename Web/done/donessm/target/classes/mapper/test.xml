@@ -31,7 +31,7 @@
 
     <!--加入小组      0是群主  1是管理员  2是成员-->
     <insert id="joinGroup">
-        INSERT INTO  `userrole`(userID,groupID,role) VALUES (#{User.userID},#{Group.groupID},2)
+        INSERT INTO  `userrole`(userID,groupID,role) VALUES (#{userID},#{groupID},#{role})
     </insert>
 
     <!--退出小组-->
@@ -83,5 +83,15 @@
     <delete id="kickMember">
         delete from `userrole` where userID=#{userID} and groupID=#{groupID}
     </delete>
+
+    <!-- 邀请成员 -->
+    <insert id="inviteMember">
+        INSERT INTO  `info`(userID,infoName,infoSelf) VALUES(#{userID},#{infoName},#{infoSelf})
+    </insert>
+
+    <!-- 修改成员信息 -->
+    <update id="updateMemberrole">
+        update `userrole` set role=#{userrole} where userID=#{userID} and groupID=#{groupID}
+    </update>
 </mapper>
 
