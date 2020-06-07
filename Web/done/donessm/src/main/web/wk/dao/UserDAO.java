@@ -25,4 +25,5 @@ public interface UserDAO {
     void createNewInfo(@Param("userID") String userID, @Param("infoName") String infoName, @Param("infoSelf") String infoSelf);
     int countNewInfo(@Param("userID") String userID,@Param("status") String status);
     List<Info> queryAllInfo(@Param("userID") String userID, @Param("status") String status);
+    void updateInfoStatus(@Param("infoID") int infoID,@Param("status") String status);
 }

@@ -155,7 +155,7 @@ public class UserController {
      * 退出登录
      */
     @ResponseBody
-    @RequestMapping(value = "logout", method = RequestMethod.POST)
+    @RequestMapping(value = "logout", method = RequestMethod.GET)
     public void login2 (HttpSession session, HttpServletResponse response)
             throws IOException {
             session.setAttribute("userID", null);
@@ -236,4 +236,21 @@ public class UserController {
         return jsonOutput;
 
     }
+
+    /**
+     * 修改通知状态
+     * @param map
+     */
+    @ResponseBody
+    @RequestMapping(value = "updateInfoStatus",produces = "application/json;charset=utf-8", method = RequestMethod.GET)
+    public boolean updateInfoStatus( @RequestBody Map<String,Object> map){
+        int infoID = (int) map.get("infoID");
+        if(userService.updateInfoStatus(infoID)) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
 }

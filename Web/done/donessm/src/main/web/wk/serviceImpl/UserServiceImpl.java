@@ -195,6 +195,7 @@ public class UserServiceImpl implements UserService {
         groupDAO.insertGroup(newGroupID, groupName, groupDescribe);
     }
 
+    /*info*/
     @Override
     public boolean createNewInfo(String userID, String infoName,  String infoSelf) {
         userDAO.createNewInfo(userID,infoName,infoSelf);
@@ -209,5 +210,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<Info> queryAllInfo(String userID){
         return userDAO.queryAllInfo(userID,"0");
+    }
+
+    @Override
+    public boolean updateInfoStatus(int infoID){
+        userDAO.updateInfoStatus(infoID,"1");
+        return true;
     }
 }

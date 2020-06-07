@@ -65,4 +65,5 @@ public interface UserService {
     boolean createNewInfo(String userID ,String InfoName, String InfoSelf);
     int countNewInfo( String userID);
     List<Info> queryAllInfo(String userID);
+    boolean updateInfoStatus(int infoID);
 }

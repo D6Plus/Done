@@ -71,4 +71,10 @@
         from  info
         where userID = #{userID} ;
     </select>
+
+    <update id="updateInfoStatus">
+        update info
+        set status = #{status}
+        where infoID = #{infoID};
+    </update>
 </mapper>
