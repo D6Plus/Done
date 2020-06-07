@@ -48,7 +48,6 @@ public interface UserService {
 
 
     void createNewPlan(String planName, String planDescribe);
-    void createNewGroup(String planName, String planDescribe);
 
 
     /*
