@@ -48,18 +48,6 @@ public interface UserService {
     boolean changeRole(String userID, String newrole);
 
 
-    void createNewPlan(String planName, String planDescribe);
-
-
-    /*
-     ** Plan
-     */
-    void createNewPlan(String planName, String planHeading, Date planRelease,
-                       Date planDeadline, String planDescribe);
-    boolean deletePlanByID(String planID);
-    void updatePlan(String planID, String planName, String planHeading,
-                    Date planRelease, Date planDeadline, String planDescribe);
-
     /*Info*/
     boolean createNewInfo(String userID ,String InfoName, String InfoSelf);
     int countNewInfo( String userID);
