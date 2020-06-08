@@ -3,7 +3,9 @@ package wk.serviceImpl;
 import wk.dao.GroupDAO;
 import wk.dao.PlanDAO;
 import wk.dao.UserDAO;
+import wk.dao.InfoDAO;
 import wk.entity.Group;
+import wk.entity.Info;
 import wk.entity.Plan;
 import wk.entity.User;
 import wk.service.UserService;
@@ -35,6 +37,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private GroupDAO groupDAO;
 
+    @Autowired
+    private InfoDAO infoDAO;
 
 
     @Override
@@ -189,5 +193,28 @@ public class UserServiceImpl implements UserService {
     public void createNewGroup(String groupName, String groupDescribe) {
         String newGroupID = "g" + (Integer.parseInt(groupDAO.getLastID().substring(1)) + 1);
         groupDAO.insertGroup(newGroupID, groupName, groupDescribe);
+    }
+
+    /*info*/
+    @Override
+    public boolean createNewInfo(String userID, String infoName,  String infoSelf) {
+        userDAO.createNewInfo(userID,infoName,infoSelf);
+        return true;
+    }
+
+    @Override
+    public int countNewInfo( String userID){
+        return userDAO.countNewInfo(userID,"0");
+    }
+
+    @Override
+    public List<Info> queryAllInfo(String userID){
+        return userDAO.queryAllInfo(userID,"0");
+    }
+
+    @Override
+    public boolean updateInfoStatus(int infoID){
+        userDAO.updateInfoStatus(infoID,"1");
+        return true;
     }
 }

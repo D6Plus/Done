@@ -1,9 +1,10 @@
 package wk.service;
 
+import org.apache.ibatis.annotations.Param;
 import wk.entity.Group;
 import wk.entity.Plan;
 import wk.entity.User;
-
+import wk.entity.Info;
 import java.util.Date;
 import java.util.List;
 
@@ -59,4 +60,10 @@ public interface UserService {
     boolean deletePlanByID(String planID);
     void updatePlan(String planID, String planName, String planHeading,
                     Date planRelease, Date planDeadline, String planDescribe);
+
+    /*Info*/
+    boolean createNewInfo(String userID ,String InfoName, String InfoSelf);
+    int countNewInfo( String userID);
+    List<Info> queryAllInfo(String userID);
+    boolean updateInfoStatus(int infoID);
 }
