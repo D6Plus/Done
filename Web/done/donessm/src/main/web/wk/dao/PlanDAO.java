@@ -17,21 +17,31 @@ public interface PlanDAO {
 
     String getLastID();
 
+    List<Plan> getPlanListByUserID(@Param("userID") String userID);
+
+    int getUserPlanByPlanID(@Param("userID") String userID,
+                            @Param("planID") String planID);
+
+    String getGroupIDByPlanID(@Param("planID") String planID);
+
+    String getRoleByGroupIDUserID(@Param("groupID") String groupID,
+                                  @Param("userID") String userID);
+
     void insertPlan(@Param("planID") String planID,
                     @Param("planName") String planName,
                     @Param("planHeading") String planHeading,
-                    @Param("planRelease") Date planRelease,
-                    @Param("planDeadline") Date planDeadline,
-                    @Param("planDescribe") String planDescribe);
+                    @Param("planRelease") String  planRelease,
+                    @Param("planDeadline") String  planDeadline,
+                    @Param("planContent") String planContent);
 
-    void deletePlanByID(@Param("planID")String planID);
+    void deletePlanByID(@Param("planID") String planID);
 
     void updatePlan(@Param("planID") String planID,
                     @Param("planName") String planName,
                     @Param("planHeading") String planHeading,
-                    @Param("planRelease") Date planRelease,
-                    @Param("planDeadline") Date planDeadline,
-                    @Param("planDescribe") String planDescribe);
+                    @Param("planRelease") String  planRelease,
+                    @Param("planDeadline") String planDeadline,
+                    @Param("planContent") String planContent);
 
-    void insertPlan(String newPlanID, String planName, String planDescribe);
+    void insertPlan(String newPlanID, String planName, String planContent);
 }

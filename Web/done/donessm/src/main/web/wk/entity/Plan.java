@@ -14,11 +14,11 @@ public class Plan {
     @JSONField(name = "planHeading")
     private String planHeading;
     @JSONField(name = "planRelease")
-    private Date planRelease;
+    private String planRelease;
     @JSONField(name = "planDeadline")
-    private Date planDeadline;
-    @JSONField(name = "planDescribe")
-    private String planDescribe;
+    private String  planDeadline;
+    @JSONField(name = "planContent")
+    private String planContent;
 
     public String getPlanID() {
         return planID;
@@ -30,12 +30,12 @@ public class Plan {
 
     public String getPlanHeading() {return planHeading;}
 
-    public Date getPlanRelease() {return planRelease;}
+    public String  getPlanRelease() {return planRelease;}
 
-    public Date getPlanDeadline() {return planDeadline;}
+    public String  getPlanDeadline() {return planDeadline;}
 
-    public String getPlanDescribe() {
-        return planDescribe;
+    public String getPlanContent() {
+        return planContent;
     }
 
     public void setPlanID(String planID) {
@@ -48,12 +48,12 @@ public class Plan {
 
     public void setPlanHeading(String planHeading) {this.planHeading = planHeading;}
 
-    public void setPlanRelease(Date planRelease) {this.planRelease = planRelease;}
+    public void setPlanRelease(String  planRelease) {this.planRelease = planRelease;}
 
-    public void setPlanDeadline(Date planDeadline) {this.planDeadline = planDeadline;}
+    public void setPlanDeadline(String  planDeadline) {this.planDeadline = planDeadline;}
 
-    public void setPlanDescribe(String planDescribe) {
-        this.planDescribe = planDescribe;
+    public void setPlanContent(String planContent) {
+        this.planContent = planContent;
     }
 
 
@@ -65,7 +65,7 @@ public class Plan {
                 ", planHeading='" + planHeading + '\'' +
                 ", planRelease='" + planRelease + '\'' +
                 ", planDeadline='" + planDeadline + '\'' +
-                ", planDescribe='" + planDescribe + '\'' +
+                ", planDescribe='" + planContent + '\'' +
                 "}\n";
     }
 }
