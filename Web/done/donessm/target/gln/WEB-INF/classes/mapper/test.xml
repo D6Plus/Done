@@ -22,14 +22,16 @@
     <insert id="insertGroup" parameterType="wk.entity.Group" useGeneratedKeys="true" keyProperty="groupID" >
         INSERT INTO `group`(groupName,groupDescribe) VALUES(#{groupName},#{groupDescribe})
     </insert>
+
+
     <!--新增userrole  0是群主  1是管理员  2是成员-->
     <insert id="insertUserrole" >
-        INSERT INTO  `userrole`(userID,groupID,role) VALUES(#{User.userID},#{Group.groupID},0)
+        INSERT INTO  `userrole`(userID,groupID,role) VALUES(#{userID},#{Group.groupID},0)
     </insert>
 
     <!--加入小组      0是群主  1是管理员  2是成员-->
     <insert id="joinGroup">
-        INSERT INTO  `userrole`(userID,groupID,role) VALUES (#{User.userID},#{Group.groupID},2)
+        INSERT INTO  `userrole`(userID,groupID,role) VALUES (#{userID},#{groupID},#{role})
     </insert>
 
     <!--退出小组-->
@@ -44,7 +46,7 @@
 
     <!--通过名字查询小组-->
     <select id="queryGroupByName" resultType="wk.entity.Group">
-        select * from `group` where groupName=#{groupName}
+        select * from `group` where groupName LIKE '%${groupName}%'
     </select>
 
     <!--通过id查询小组-->
@@ -52,5 +54,44 @@
         select * from `group` where groupID = #{groupID}
     </select>
 
+   <!-- 用户查询组内职位 -->
+    <select id="queryRoleByID" resultType="wk.entity.userrole">
+        select * from `userrole` where userID=#{userID} and groupID=#{groupID}
+    </select>
+
+    <!-- 用户查询自己加入的所有小组 -->
+    <select id="queryAllJoinGroup" resultType="wk.entity.Group">
+        select * from `userrole`,`group` where userrole.userID=#{userID} and userrole.groupID=group.groupID
+    </select>
+
+    <!--查询小组具体成员 -->
+    <select id="queryAllMemberInGroup" resultType="wk.entity.User">
+        select userName from `user`,`userrole` where userrole.groupID=#{groupID} and userrole.userID=user.userID
+    </select>
+
+    <!-- 查看用户是否有权限-->
+    <select id="queryUserrole" resultType="wk.entity.userrole">
+        select * from `userrole` where userID=#{userID} and groupID=#{groupID}
+    </select>
+
+    <!-- 修改小组信息 -->
+    <update id="updateGroupinfo">
+        update `group` set groupName=#{groupName},groupDescribe=#{groupDescribe} where groupID=#{groupID}
+    </update>
+
+    <!-- 移除小组成员 -->
+    <delete id="kickMember">
+        delete from `userrole` where userID=#{userID} and groupID=#{groupID}
+    </delete>
+
+    <!-- 邀请成员 -->
+    <insert id="inviteMember">
+        INSERT INTO  `info`(userID,infoName,infoSelf) VALUES(#{userID},#{infoName},#{infoSelf})
+    </insert>
+
+    <!-- 修改成员信息 -->
+    <update id="updateMemberrole">
+        update `userrole` set role=#{userrole} where userID=#{userID} and groupID=#{groupID}
+    </update>
 </mapper>
 
