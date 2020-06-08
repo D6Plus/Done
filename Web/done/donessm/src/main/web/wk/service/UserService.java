@@ -48,9 +48,13 @@ public interface UserService {
     boolean changeRole(String userID, String newrole);
 
 
+    boolean deletePlanByID(String planID);
+
     /*Info*/
     boolean createNewInfo(String userID ,String InfoName, String InfoSelf);
     int countNewInfo( String userID);
     List<Info> queryAllInfo(String userID);
     boolean updateInfoStatus(int infoID);
+    void updatePlan(String planID, String planName, String planHeading,
+                    String planRelease, String planDeadline, String planDescribe);
 }

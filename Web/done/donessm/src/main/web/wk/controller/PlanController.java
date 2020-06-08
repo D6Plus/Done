@@ -92,9 +92,9 @@ public class PlanController {
      */
     @RequestMapping(value="/deletePlan",produces = "application/json;charset=utf-8")
     @ResponseBody
-    public boolean deletePlan(@RequestBody Map<String,Object> map){
-        Plan plan=(Plan)map.get("Plan");
-        return userService.deletePlanByID(plan.getPlanID());
+    public boolean deletePlan(@RequestParam String planID){
+
+        return planService.deletePlanByID(planID);
 
     }
 
@@ -105,7 +105,7 @@ public class PlanController {
     @RequestMapping(value = "/queryallPlan",produces = "application/json;charset=utf-8")
     @ResponseBody
     public List<Plan> queryallPlan(){
-        return userService.getPlanList();
+        return planService.getAllPlan();
     }
 
     /**

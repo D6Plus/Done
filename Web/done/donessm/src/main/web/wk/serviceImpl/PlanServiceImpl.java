@@ -16,6 +16,17 @@ public class PlanServiceImpl implements PlanService {
     private PlanDAO planDAO;
 
     @Override
+    public List<Plan> getAllPlan() {
+        return planDAO.queryAll();
+    }
+
+    @Override
+    public boolean deletePlanByID(String planID) {
+        planDAO.deletePlanByID(planID);
+        return true;
+    }
+
+    @Override
     public List<Plan> getPlanListByUserID(String userID) {
 
         return planDAO.getPlanListByUserID(userID);
@@ -41,7 +52,7 @@ public class PlanServiceImpl implements PlanService {
         if(0==i) {
             String groupID = planDAO.getGroupIDByPlanID(planID);
             if(groupID==null){
-               return "未找到该计划";
+                return "未找到该计划";
             }
             String r = planDAO.getRoleByGroupIDUserID(groupID, userID);
             return "组ID为"+groupID+"的"+r;

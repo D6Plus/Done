@@ -33,4 +33,18 @@
         planDescribe = #{planDescribe}
         where planID = #{planID}
     </select>
+    <select id="getPlanListByUserID" resultType="wk.entity.Plan">
+       select * from `plan` where planID = (select planID from `userplan` where userID = #{userID} ) or
+       planID=(select planID from `groupplan` where groupID=(select groupID from `userrole` where userID=#{userID}))
+       order by planDeadline asc
+    </select>
+    <select id="getUserPlanByPlanID" resultType="int">
+        select count(*) from `userplan` where planID = #{planID} and userID = #{userID}
+    </select>
+    <select id="getGroupIDByPlanID" resultType="java.lang.String">
+        select groupID from `groupplan` where planID = #{planID}
+    </select>
+    <select id="getRoleByGroupIDUserID" resultType="java.lang.String">
+        select role from `userrole` where userID = #{userID} and groupID = #{groupID}
+    </select>
 </mapper>

@@ -91,6 +91,7 @@ public class UserServiceImpl implements UserService {
         return userDAO.login(userID,pwd);
     }
 
+
     @Override
     public User login2(String userID, String pwd) {
         User user = userDAO.login(userID,pwd);
@@ -129,6 +130,7 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+
     @Override
     public boolean changePwd2(String userID, String newpwd){
         if(userDAO.queryByID(userID) != null){
@@ -138,6 +140,20 @@ public class UserServiceImpl implements UserService {
         else{
             return false;
         }
+    }
+
+    @Override
+    public boolean deletePlanByID(String planID) {
+        planDAO.deletePlanByID(planID);
+        return false;
+    }
+
+    @Override
+    public void updatePlan(String planID, String planName,
+                           String planHeading, String planRelease,
+                           String planDeadline, String planDescribe) {
+        planDAO.updatePlan(planID, planName, planHeading,
+                planRelease, planDeadline, planDescribe);
     }
 
     @Override
@@ -161,7 +177,6 @@ public class UserServiceImpl implements UserService {
         userDAO.updateMassage(userID, userName, pNum, userSex, userBirth);
         return true;
     }
-
 
     /*info*/
     @Override
