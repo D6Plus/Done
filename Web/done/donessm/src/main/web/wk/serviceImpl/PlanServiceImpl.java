@@ -33,14 +33,30 @@ public class PlanServiceImpl implements PlanService {
     }
 
     @Override
+    public List<Plan> getPlanListByGroupID(String groupID) {
+        return planDAO.getPlanListByGroupID(groupID);
+    }
+
+    @Override
     public Plan getPlanById(String planID) {
         return planDAO.queryByID(planID);
     }
 
     @Override
-    public boolean createNewPlan(String planName, String planHeading, String planRelease,
-                                 String  planDeadline, String planContent) {
+    public boolean createNewUserPlan(String userID,String planName, String planHeading, String planRelease,
+                                     String  planDeadline, String planContent) {
+
         String PlanID = "p" + (Integer.parseInt(planDAO.getLastID().substring(1)) + 1);
+        planDAO.insertUserPlan( userID,PlanID);
+        planDAO.insertPlan(PlanID, planName, planHeading,
+                planRelease, planDeadline, planContent);
+        return true;
+    }
+
+    @Override
+    public boolean createNewGroupPlan(String groupID, String planName, String planHeading, String planRelease, String planDeadline, String planContent) {
+        String PlanID = "p" + (Integer.parseInt(planDAO.getLastID().substring(1)) + 1);
+        planDAO.insertGroupPlan(PlanID,groupID);
         planDAO.insertPlan(PlanID, planName, planHeading,
                 planRelease, planDeadline, planContent);
         return true;

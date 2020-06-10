@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <el-container style="height: 100%">
+    <el-container>
       <!-- 页头 -->
       <el-header style="padding: 0;height: 50px;z-index: 100">
         <HeadTop></HeadTop>
       </el-header>
-      <el-container style="height: 100%">
+      <el-container>
         <!-- 侧边菜单栏 -->
         <el-aside width="200px" height="100%" >
           <SideMenu></SideMenu>
         </el-aside>
         <!-- 主容器 -->
-        <el-main style="margin-top:20px; padding: 0">
+        <el-main style="margin-top:20px; padding: 0; overflow-y: hidden">
           <FrontMain></FrontMain>
         </el-main>
       </el-container>
@@ -44,5 +44,6 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 1920px;
   }
 </style>

@@ -18,6 +18,8 @@ public interface PlanDAO {
     String getLastID();
 
     List<Plan> getPlanListByUserID(@Param("userID") String userID);
+    List<Plan> getPlanListByGroupID(@Param("groupID") String groupID);
+
 
     int getUserPlanByPlanID(@Param("userID") String userID,
                             @Param("planID") String planID);
@@ -33,6 +35,14 @@ public interface PlanDAO {
                     @Param("planRelease") String  planRelease,
                     @Param("planDeadline") String  planDeadline,
                     @Param("planContent") String planContent);
+
+    void insertUserPlan(@Param("userID") String userID,
+                        @Param("planID") String planID
+    );
+
+    void insertGroupPlan(@Param("groupID") String groupID,
+                         @Param("planID") String planID
+    );
 
     void deletePlanByID(@Param("planID") String planID);
 

@@ -7,7 +7,17 @@
         #{planHeading},
         #{planRelease},
         #{planDeadline},
-        #{planDescribe})
+        #{planContent})
+    </insert>
+    <insert id="insertUserPlan">
+        insert into `userplan` (userID,planID,planState) value (#{userID},
+        #{planID},
+       0)
+    </insert>
+    <insert id="insertGroupPlan">
+        insert into `groupplan` value (#{groupID},
+        #{planID},
+       0)
     </insert>
     <select id="queryByID" resultType="wk.entity.Plan">
         select * from `plan` where planID = #{planID}
@@ -30,7 +40,7 @@
         planName = #{planName},
         planDeadline = #{planDeadline},
         planRelease = #{planRelease},
-        planDescribe = #{planDescribe}
+        planContent = #{planContent}
         where planID = #{planID}
     </select>
     <select id="getPlanListByUserID" resultType="wk.entity.Plan">
@@ -38,8 +48,11 @@
        planID=(select planID from `groupplan` where groupID=(select groupID from `userrole` where userID=#{userID}))
        order by planDeadline asc
     </select>
+    <select id="getPlanListByGroupID" resultType="wk.entity.Plan">
+        select * from `plan` where planID=(select planID from `groupplan` where groupID = #{groupID})
+    </select>
     <select id="getUserPlanByPlanID" resultType="int">
-        select count(*) from `userplan` where planID = #{planID} and userID = #{userID}
+        select count(*) from `userplan` where planID = #{planID} and userID = #{userID} order by planDeadline asc
     </select>
     <select id="getGroupIDByPlanID" resultType="java.lang.String">
         select groupID from `groupplan` where planID = #{planID}

@@ -38,21 +38,38 @@ public class PlanController {
         return planService.getPlanListByUserID(userID);
     }
 
+    @RequestMapping(value = "/getPlanListByGroupID",produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public List<Plan> getPlanListByGroupID(@RequestParam String groupID){
+        return planService.getPlanListByGroupID(groupID);
+    }
+
     @RequestMapping(value = "/getPlanById",produces = "application/json;charset=utf-8")
     @ResponseBody
     public Plan getPlanById(@RequestParam String planID){
         return planService.getPlanById(planID);
     }
 
-    @RequestMapping(value = "/createNewPlan",produces = "application/json;charset=utf-8")
+    @RequestMapping(value = "/createNewUserPlan",produces = "application/json;charset=utf-8")
     @ResponseBody
-    public boolean createNewPlan(
-            @RequestParam String planName, @RequestParam String planHeading,
-            @RequestParam  String planRelease,
-            @RequestParam  String planDeadline,
-            @RequestParam String planContent){
+    public boolean createNewUserPlan( @RequestParam String userID,
+                                      @RequestParam String planName, @RequestParam String planHeading,
+                                      @RequestParam  String planRelease,
+                                      @RequestParam  String planDeadline,
+                                      @RequestParam String planContent){
 
-        return  planService.createNewPlan(planName,planHeading,planRelease,planDeadline,planContent);
+        return  planService.createNewUserPlan(userID, planName, planHeading, planRelease, planDeadline, planContent);
+    }
+
+    @RequestMapping(value = "/createNewGroupPlan",produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public boolean createNewGroupPlan( @RequestParam String groupID,
+                                       @RequestParam String planName, @RequestParam String planHeading,
+                                       @RequestParam  String planRelease,
+                                       @RequestParam  String planDeadline,
+                                       @RequestParam String planContent){
+
+        return  planService.createNewGroupPlan(groupID, planName, planHeading, planRelease, planDeadline, planContent);
     }
 
     @RequestMapping(value = "/getPlanRole",produces = "application/json;charset=utf-8")
@@ -88,7 +105,7 @@ public class PlanController {
 */
     /**
      * 删除计划控制器
-     * @param map
+     * @param
      */
     @RequestMapping(value="/deletePlan",produces = "application/json;charset=utf-8")
     @ResponseBody

@@ -1,45 +1,54 @@
 <template>
   <div id="managePlan" style="display: inline">
-    <div id="myPlan" style="display: inline-block;float: right">
-      <el-card class="box-card" style="width: 800px;">
+    <div id="myPlan" style="display: inline-block;float: left">
+      <el-card class="box-card1" style="width: 700px;">
         <div slot="header" class="clearfix">
           <span>计划一览</span>
         </div>
+        <br>
+        <el-input id="inputid" v-model="input1" maxlength="10" placeholder="请输入要进行操作的计划序号"></el-input>
+        <el-button @click="editPlanInfo">编辑</el-button>
+        <!--先用getPlanById获取具体信息填充默认输入框 然后更改计划后调用updatePlan -->
+        <el-popconfirm title="确定删除这个计划吗？" @onConfirm="del(getIndex())">
+          <el-button slot="reference">删除</el-button>
+        </el-popconfirm>
         <div v-for="item in list" :key="index" class="text item">
-          <p>计划名称 : {{item.index}}.{{item.name}}</p>
-          <p>发布时间 : {{item.value1}}</p>
-          <p>截止时间 : {{item.value2}}</p>
-          <p>计划详细内容 : {{item.planinfo}}</p>
-          <el-popconfirm title="确定删除这个计划吗？" @onConfirm="del(item.index)">
-            <el-button slot="reference">删除</el-button>
-          </el-popconfirm>
+          <p>计划序号 :{{item.index}}</p>
+          <p>计划名称 :</p>
+          <el-input v-model=item.name></el-input>
+          <p>发布时间 :</p>
+          <el-input v-model=item.value1></el-input>
+          <p>截止时间 :</p>
+          <el-input v-model=item.value2></el-input>
+          <p>计划详细内容 :</p>
+          <el-input
+            type="textarea"
+            :rows="10"
+            v-model=item.planinfo>
+          </el-input>
+          <br><br>
         </div>
       </el-card>
     </div>
     <div id="createPlan" style="display: inline-block;float: left">
-      <el-card class="box-card" style="width: 480px">
+      <el-card class="box-card2" style="width: 580px">
         <div slot="header" class="clearfix">
           <span>新建计划</span>
-          <el-button :plain="true" @click="add()">点击新建</el-button>
         </div>
         <div class="text item">
           <p>计划名称:</p>
-          <el-input v-model="input" placeholder="请输入计划名称"></el-input>
+          <el-input v-model="newinput" placeholder="请输入计划名称"></el-input>
           <p>发布时间:</p>
           <el-date-picker
             v-model="value1"
-            type="date"
-            placeholder="选择日期"
-            format="yyyy 年 MM 月 dd 日"
-            value-format="yyyy-MM-dd">
+            type="datetime"
+            placeholder="选择日期时间">
           </el-date-picker>
           <p>截止时间:</p>
           <el-date-picker
             v-model="value2"
-            type="date"
-            placeholder="选择日期"
-            format="yyyy 年 MM 月 dd 日"
-            value-format="yyyy-MM-dd">
+            type="datetime"
+            placeholder="选择日期时间">
           </el-date-picker>
           <span class="demonstration"></span>
           <p>计划详细内容:</p>
@@ -49,6 +58,9 @@
             placeholder="请输入内容"
             v-model="textarea">
           </el-input>
+          <p></p>
+          <el-button :plain="true" style="display:inline-block;float: right" @click="add()">点击新建</el-button>
+          <p>&nbsp;</p>
         </div>
       </el-card>
     </div>
@@ -57,14 +69,15 @@
 
 <script>
     import index from "../../../router";
-
     export default {
       name: "ManagePlan",
       data(){
         return{
+          inputindex:'',
+          input1:'',
           value1:'',
           value2:'',
-          input:'',
+          newinput:'',
           textarea:'',
           name:'',
           planinfo:'',
@@ -82,6 +95,11 @@
           ]
         }
       },
+      created() {
+        this.$nextTick(function () {
+          var inputindex = document.getElementById('inputid');
+        })
+      },
       methods:{
         add(){
           this.list.push({name:this.input,value1:this.value1,value2:this.value2,planinfo:this.textarea,index:this.list.length+1})
@@ -90,6 +108,10 @@
             type: 'success'
           });
         },
+        getIndex(){
+          var index1 = document.getElementById('inputid').value;
+          return index1;
+        },
         del(index){
           var index = this.list.findIndex(item => {
             if(item.index == index){
@@ -97,6 +119,13 @@
             }
           })
           this.list.splice(index,1)
+        },
+        editPlanInfo(index){
+          var index = this.list.findIndex(item => {
+            if(item.index == index){
+              return true;
+            }
+          })
         },
         confirm(){
           this.visible = false;

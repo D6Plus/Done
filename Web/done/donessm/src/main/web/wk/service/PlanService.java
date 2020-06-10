@@ -9,11 +9,14 @@ public interface PlanService {
     //查询所有计划
     List<Plan> getAllPlan();
     List<Plan> getPlanListByUserID(String userID);
+    List<Plan> getPlanListByGroupID(String groupID);
     //获取计划详情
     Plan getPlanById(String planID);
     //计划创建
-    boolean createNewPlan(String planName, String planHeading,
-                          String planRelease, String planDeadline, String planContent);
+    boolean createNewUserPlan(String userID,String planName, String planHeading, String planRelease,
+                              String  planDeadline, String planContent);
+    boolean createNewGroupPlan(String groupID,String planName, String planHeading, String planRelease,
+                               String  planDeadline, String planContent);
     //用户对应计划权限查询
     String getPlanRole(String userID, String planID);
 
